@@ -7,7 +7,7 @@
 
     End Sub
 
-    Private Sub specialmarklb_Click(sender As Object, e As EventArgs) Handles specialmarklb.Click
+    Private Sub specialmarklb_Click(sender As Object, e As EventArgs) Handles specialmarklbl.Click
 
     End Sub
 
@@ -23,7 +23,7 @@
 
     End Sub
 
-    Private Sub RadioButton3_CheckedChanged(sender As Object, e As EventArgs) Handles spayneurb.CheckedChanged
+    Private Sub RadioButton3_CheckedChanged(sender As Object, e As EventArgs)
 
     End Sub
 

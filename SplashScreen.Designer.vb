@@ -22,13 +22,17 @@ Partial Class SplashScreen
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SplashScreen))
         Me.pbProgBar = New System.Windows.Forms.ProgressBar()
         Me.pbPercent = New System.Windows.Forms.Label()
+        Me.tmrProgTimer = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
         '
         'pbProgBar
         '
+        Me.pbProgBar.BackColor = System.Drawing.SystemColors.Control
+        Me.pbProgBar.ForeColor = System.Drawing.Color.Teal
         Me.pbProgBar.Location = New System.Drawing.Point(13, 260)
         Me.pbProgBar.Name = "pbProgBar"
         Me.pbProgBar.Size = New System.Drawing.Size(597, 40)
@@ -42,6 +46,9 @@ Partial Class SplashScreen
         Me.pbPercent.Name = "pbPercent"
         Me.pbPercent.Size = New System.Drawing.Size(0, 17)
         Me.pbPercent.TabIndex = 1
+        '
+        'tmrProgTimer
+        '
         '
         'SplashScreen
         '
@@ -63,4 +70,5 @@ Partial Class SplashScreen
 
     Friend WithEvents pbProgBar As ProgressBar
     Friend WithEvents pbPercent As Label
+    Friend WithEvents tmrProgTimer As Timer
 End Class
