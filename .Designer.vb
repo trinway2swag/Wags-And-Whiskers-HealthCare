@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class GeneralInformationForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class GeneralInformationForm
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(GeneralInformationForm))
         Me.GeneralInformationHeader = New System.Windows.Forms.PictureBox()
@@ -85,7 +85,7 @@ Partial Class GeneralInformationForm
         Me.dognamelbl.Location = New System.Drawing.Point(6, 47)
         Me.dognamelbl.Name = "dognamelbl"
         Me.dognamelbl.Size = New System.Drawing.Size(88, 19)
-        Me.dognamelbl.TabIndex = 2
+        Me.dognamelbl.TabIndex = 0
         Me.dognamelbl.Text = "Dog Name"
         '
         'dognametxb
@@ -102,7 +102,7 @@ Partial Class GeneralInformationForm
         Me.breedlb.Location = New System.Drawing.Point(6, 121)
         Me.breedlb.Name = "breedlb"
         Me.breedlb.Size = New System.Drawing.Size(52, 19)
-        Me.breedlb.TabIndex = 4
+        Me.breedlb.TabIndex = 0
         Me.breedlb.Text = "Breed"
         '
         'dogbreedtxb
@@ -119,7 +119,7 @@ Partial Class GeneralInformationForm
         Me.colorlb.Location = New System.Drawing.Point(6, 196)
         Me.colorlb.Name = "colorlb"
         Me.colorlb.Size = New System.Drawing.Size(49, 19)
-        Me.colorlb.TabIndex = 6
+        Me.colorlb.TabIndex = 0
         Me.colorlb.Text = "Color"
         '
         'colortxb
@@ -133,10 +133,10 @@ Partial Class GeneralInformationForm
         '
         Me.specialmarklbl.AutoSize = True
         Me.specialmarklbl.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.specialmarklbl.Location = New System.Drawing.Point(6, 273)
+        Me.specialmarklbl.Location = New System.Drawing.Point(7, 273)
         Me.specialmarklbl.Name = "specialmarklbl"
         Me.specialmarklbl.Size = New System.Drawing.Size(131, 19)
-        Me.specialmarklbl.TabIndex = 8
+        Me.specialmarklbl.TabIndex = 0
         Me.specialmarklbl.Text = "Special Markings"
         '
         'specialmarktxb
@@ -153,7 +153,7 @@ Partial Class GeneralInformationForm
         Me.lblDogAge.Location = New System.Drawing.Point(6, 347)
         Me.lblDogAge.Name = "lblDogAge"
         Me.lblDogAge.Size = New System.Drawing.Size(37, 19)
-        Me.lblDogAge.TabIndex = 10
+        Me.lblDogAge.TabIndex = 0
         Me.lblDogAge.Text = "Age"
         '
         'genderlb
@@ -163,7 +163,7 @@ Partial Class GeneralInformationForm
         Me.genderlb.Location = New System.Drawing.Point(227, 47)
         Me.genderlb.Name = "genderlb"
         Me.genderlb.Size = New System.Drawing.Size(63, 19)
-        Me.genderlb.TabIndex = 12
+        Me.genderlb.TabIndex = 0
         Me.genderlb.Text = "Gender"
         '
         'malerb
@@ -214,7 +214,7 @@ Partial Class GeneralInformationForm
         Me.gbDogInfo.Location = New System.Drawing.Point(0, 119)
         Me.gbDogInfo.Name = "gbDogInfo"
         Me.gbDogInfo.Size = New System.Drawing.Size(396, 577)
-        Me.gbDogInfo.TabIndex = 18
+        Me.gbDogInfo.TabIndex = 0
         Me.gbDogInfo.TabStop = False
         Me.gbDogInfo.Text = "Dog Information"
         '
@@ -237,7 +237,7 @@ Partial Class GeneralInformationForm
         Me.lblWeight.Location = New System.Drawing.Point(6, 431)
         Me.lblWeight.Name = "lblWeight"
         Me.lblWeight.Size = New System.Drawing.Size(99, 19)
-        Me.lblWeight.TabIndex = 16
+        Me.lblWeight.TabIndex = 0
         Me.lblWeight.Text = "Weight (lbs)"
         '
         'cbDogAge
@@ -277,7 +277,7 @@ Partial Class GeneralInformationForm
         Me.lblSpayedNeutered.Location = New System.Drawing.Point(227, 196)
         Me.lblSpayedNeutered.Name = "lblSpayedNeutered"
         Me.lblSpayedNeutered.Size = New System.Drawing.Size(139, 19)
-        Me.lblSpayedNeutered.TabIndex = 13
+        Me.lblSpayedNeutered.TabIndex = 0
         Me.lblSpayedNeutered.Text = "Spayed/Neutered"
         '
         'ownernamelb
@@ -287,7 +287,7 @@ Partial Class GeneralInformationForm
         Me.ownernamelb.Location = New System.Drawing.Point(11, 47)
         Me.ownernamelb.Name = "ownernamelb"
         Me.ownernamelb.Size = New System.Drawing.Size(107, 19)
-        Me.ownernamelb.TabIndex = 1
+        Me.ownernamelb.TabIndex = 0
         Me.ownernamelb.Text = "Owner Name"
         '
         'ownernametxb
@@ -304,7 +304,7 @@ Partial Class GeneralInformationForm
         Me.ownerphonelb.Location = New System.Drawing.Point(11, 121)
         Me.ownerphonelb.Name = "ownerphonelb"
         Me.ownerphonelb.Size = New System.Drawing.Size(119, 19)
-        Me.ownerphonelb.TabIndex = 3
+        Me.ownerphonelb.TabIndex = 0
         Me.ownerphonelb.Text = "Phone Number"
         '
         'ownerphonetxb
@@ -321,7 +321,7 @@ Partial Class GeneralInformationForm
         Me.owneremaillb.Location = New System.Drawing.Point(11, 196)
         Me.owneremaillb.Name = "owneremaillb"
         Me.owneremaillb.Size = New System.Drawing.Size(48, 19)
-        Me.owneremaillb.TabIndex = 5
+        Me.owneremaillb.TabIndex = 0
         Me.owneremaillb.Text = "Email"
         '
         'owneremailtxb
@@ -338,7 +338,7 @@ Partial Class GeneralInformationForm
         Me.owneraddresslb.Location = New System.Drawing.Point(11, 273)
         Me.owneraddresslb.Name = "owneraddresslb"
         Me.owneraddresslb.Size = New System.Drawing.Size(68, 19)
-        Me.owneraddresslb.TabIndex = 7
+        Me.owneraddresslb.TabIndex = 0
         Me.owneraddresslb.Text = "Address"
         '
         'owneraddresstxb
@@ -355,7 +355,7 @@ Partial Class GeneralInformationForm
         Me.vetnamelb.Location = New System.Drawing.Point(6, 49)
         Me.vetnamelb.Name = "vetnamelb"
         Me.vetnamelb.Size = New System.Drawing.Size(146, 19)
-        Me.vetnamelb.TabIndex = 10
+        Me.vetnamelb.TabIndex = 0
         Me.vetnamelb.Text = "Veterinarian Name"
         '
         'vetnamtxb
@@ -372,7 +372,7 @@ Partial Class GeneralInformationForm
         Me.vetphonelb.Location = New System.Drawing.Point(6, 125)
         Me.vetphonelb.Name = "vetphonelb"
         Me.vetphonelb.Size = New System.Drawing.Size(119, 19)
-        Me.vetphonelb.TabIndex = 12
+        Me.vetphonelb.TabIndex = 0
         Me.vetphonelb.Text = "Phone Number"
         '
         'vetphonetxb
@@ -396,7 +396,7 @@ Partial Class GeneralInformationForm
         Me.gbOwnerInfo.Location = New System.Drawing.Point(402, 119)
         Me.gbOwnerInfo.Name = "gbOwnerInfo"
         Me.gbOwnerInfo.Size = New System.Drawing.Size(416, 353)
-        Me.gbOwnerInfo.TabIndex = 19
+        Me.gbOwnerInfo.TabIndex = 0
         Me.gbOwnerInfo.TabStop = False
         Me.gbOwnerInfo.Text = "Owner Information"
         '
@@ -410,7 +410,7 @@ Partial Class GeneralInformationForm
         Me.gbVetInfo.Location = New System.Drawing.Point(402, 479)
         Me.gbVetInfo.Name = "gbVetInfo"
         Me.gbVetInfo.Size = New System.Drawing.Size(416, 217)
-        Me.gbVetInfo.TabIndex = 20
+        Me.gbVetInfo.TabIndex = 0
         Me.gbVetInfo.TabStop = False
         Me.gbVetInfo.Text = "Veteranarian Information"
         '
@@ -419,16 +419,16 @@ Partial Class GeneralInformationForm
         Me.btnExit.Location = New System.Drawing.Point(12, 702)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(75, 23)
-        Me.btnExit.TabIndex = 23
+        Me.btnExit.TabIndex = 17
         Me.btnExit.Text = "Exit"
         Me.btnExit.UseVisualStyleBackColor = True
         '
         'btnReset
         '
-        Me.btnReset.Location = New System.Drawing.Point(366, 702)
+        Me.btnReset.Location = New System.Drawing.Point(376, 702)
         Me.btnReset.Name = "btnReset"
         Me.btnReset.Size = New System.Drawing.Size(75, 23)
-        Me.btnReset.TabIndex = 22
+        Me.btnReset.TabIndex = 18
         Me.btnReset.Text = "Reset"
         Me.btnReset.UseVisualStyleBackColor = True
         '
@@ -437,7 +437,7 @@ Partial Class GeneralInformationForm
         Me.btnContinue.Location = New System.Drawing.Point(725, 702)
         Me.btnContinue.Name = "btnContinue"
         Me.btnContinue.Size = New System.Drawing.Size(84, 23)
-        Me.btnContinue.TabIndex = 21
+        Me.btnContinue.TabIndex = 19
         Me.btnContinue.Text = "Continue"
         Me.btnContinue.UseVisualStyleBackColor = True
         '

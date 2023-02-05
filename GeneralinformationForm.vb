@@ -83,4 +83,8 @@
         VaccinationInformation.Show()
         Me.Hide()
     End Sub
+
+    Private Sub gbDogInfo_Enter(sender As Object, e As EventArgs) Handles gbDogInfo.Enter
+
+    End Sub
 End Class

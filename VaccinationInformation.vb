@@ -34,4 +34,21 @@
     Private Sub canineinfluenzapricelbl_Click(sender As Object, e As EventArgs) Handles canineinfluenzapricelbl.Click
 
     End Sub
+
+    Private Sub caccineinfoexitbt_Click(sender As Object, e As EventArgs) Handles caccineinfoexitbt.Click
+        Application.Exit()
+    End Sub
+
+    Private Sub vaccineinforesetbt_Click(sender As Object, e As EventArgs) Handles vaccineinforesetbt.Click
+
+    End Sub
+
+    Private Sub vaccineinfocontinuebt_Click(sender As Object, e As EventArgs) Handles vaccineinfocontinuebt.Click
+
+    End Sub
+    Private Sub btnContinue_Click(sender As Object, e As EventArgs) Handles vaccineinfocontinuebt.Click
+        Outputform.Show()
+        Me.Hide()
+    End Sub
+
 End Class

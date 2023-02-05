@@ -60,6 +60,8 @@ Partial Class VaccinationInformation
         Me.vaccineinforesetbt = New System.Windows.Forms.Button()
         Me.vaccineinfocontinuebt = New System.Windows.Forms.Button()
         Me.changedollarsignlbl = New System.Windows.Forms.Label()
+        Me.Vaccineinfodatelbl = New System.Windows.Forms.Label()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.SuspendLayout()
         '
         'Vaccinationinfolbl
@@ -88,7 +90,7 @@ Partial Class VaccinationInformation
         Me.bordetellacb.Location = New System.Drawing.Point(15, 311)
         Me.bordetellacb.Name = "bordetellacb"
         Me.bordetellacb.Size = New System.Drawing.Size(100, 22)
-        Me.bordetellacb.TabIndex = 2
+        Me.bordetellacb.TabIndex = 19
         Me.bordetellacb.Text = "Bordetella"
         Me.bordetellacb.UseVisualStyleBackColor = True
         '
@@ -99,7 +101,7 @@ Partial Class VaccinationInformation
         Me.paraininfluenzacb.Location = New System.Drawing.Point(15, 339)
         Me.paraininfluenzacb.Name = "paraininfluenzacb"
         Me.paraininfluenzacb.Size = New System.Drawing.Size(139, 22)
-        Me.paraininfluenzacb.TabIndex = 3
+        Me.paraininfluenzacb.TabIndex = 20
         Me.paraininfluenzacb.Text = "Parain influenza"
         Me.paraininfluenzacb.UseVisualStyleBackColor = True
         '
@@ -110,7 +112,7 @@ Partial Class VaccinationInformation
         Me.leptospirosiscb.Location = New System.Drawing.Point(15, 367)
         Me.leptospirosiscb.Name = "leptospirosiscb"
         Me.leptospirosiscb.Size = New System.Drawing.Size(124, 22)
-        Me.leptospirosiscb.TabIndex = 4
+        Me.leptospirosiscb.TabIndex = 21
         Me.leptospirosiscb.Text = "Leptospirosis"
         Me.leptospirosiscb.UseVisualStyleBackColor = True
         '
@@ -120,7 +122,7 @@ Partial Class VaccinationInformation
         Me.canineinfluenzacb.Location = New System.Drawing.Point(15, 395)
         Me.canineinfluenzacb.Name = "canineinfluenzacb"
         Me.canineinfluenzacb.Size = New System.Drawing.Size(144, 22)
-        Me.canineinfluenzacb.TabIndex = 5
+        Me.canineinfluenzacb.TabIndex = 22
         Me.canineinfluenzacb.Text = "Canine influenza"
         Me.canineinfluenzacb.UseVisualStyleBackColor = True
         '
@@ -130,7 +132,7 @@ Partial Class VaccinationInformation
         Me.rabiescb.Location = New System.Drawing.Point(15, 423)
         Me.rabiescb.Name = "rabiescb"
         Me.rabiescb.Size = New System.Drawing.Size(76, 22)
-        Me.rabiescb.TabIndex = 6
+        Me.rabiescb.TabIndex = 23
         Me.rabiescb.Text = "Rabies"
         Me.rabiescb.UseVisualStyleBackColor = True
         '
@@ -140,7 +142,7 @@ Partial Class VaccinationInformation
         Me.nonecb.Location = New System.Drawing.Point(15, 451)
         Me.nonecb.Name = "nonecb"
         Me.nonecb.Size = New System.Drawing.Size(66, 22)
-        Me.nonecb.TabIndex = 7
+        Me.nonecb.TabIndex = 24
         Me.nonecb.Text = "None"
         Me.nonecb.UseVisualStyleBackColor = True
         '
@@ -160,7 +162,7 @@ Partial Class VaccinationInformation
         Me.CheckBox2.Location = New System.Drawing.Point(674, 175)
         Me.CheckBox2.Name = "CheckBox2"
         Me.CheckBox2.Size = New System.Drawing.Size(76, 22)
-        Me.CheckBox2.TabIndex = 13
+        Me.CheckBox2.TabIndex = 29
         Me.CheckBox2.Text = "Rabies"
         Me.CheckBox2.UseVisualStyleBackColor = True
         '
@@ -170,7 +172,7 @@ Partial Class VaccinationInformation
         Me.CheckBox3.Location = New System.Drawing.Point(674, 149)
         Me.CheckBox3.Name = "CheckBox3"
         Me.CheckBox3.Size = New System.Drawing.Size(144, 22)
-        Me.CheckBox3.TabIndex = 12
+        Me.CheckBox3.TabIndex = 28
         Me.CheckBox3.Text = "Canine influenza"
         Me.CheckBox3.UseVisualStyleBackColor = True
         '
@@ -181,7 +183,7 @@ Partial Class VaccinationInformation
         Me.CheckBox4.Location = New System.Drawing.Point(674, 121)
         Me.CheckBox4.Name = "CheckBox4"
         Me.CheckBox4.Size = New System.Drawing.Size(124, 22)
-        Me.CheckBox4.TabIndex = 11
+        Me.CheckBox4.TabIndex = 27
         Me.CheckBox4.Text = "Leptospirosis"
         Me.CheckBox4.UseVisualStyleBackColor = True
         '
@@ -192,7 +194,7 @@ Partial Class VaccinationInformation
         Me.CheckBox5.Location = New System.Drawing.Point(674, 98)
         Me.CheckBox5.Name = "CheckBox5"
         Me.CheckBox5.Size = New System.Drawing.Size(139, 22)
-        Me.CheckBox5.TabIndex = 10
+        Me.CheckBox5.TabIndex = 26
         Me.CheckBox5.Text = "Parain influenza"
         Me.CheckBox5.UseVisualStyleBackColor = True
         '
@@ -202,7 +204,7 @@ Partial Class VaccinationInformation
         Me.CheckBox6.Location = New System.Drawing.Point(674, 73)
         Me.CheckBox6.Name = "CheckBox6"
         Me.CheckBox6.Size = New System.Drawing.Size(100, 22)
-        Me.CheckBox6.TabIndex = 9
+        Me.CheckBox6.TabIndex = 25
         Me.CheckBox6.Text = "Bordetella"
         Me.CheckBox6.UseVisualStyleBackColor = True
         '
@@ -212,7 +214,7 @@ Partial Class VaccinationInformation
         Me.dewormpillcb.Location = New System.Drawing.Point(674, 205)
         Me.dewormpillcb.Name = "dewormpillcb"
         Me.dewormpillcb.Size = New System.Drawing.Size(110, 22)
-        Me.dewormpillcb.TabIndex = 14
+        Me.dewormpillcb.TabIndex = 30
         Me.dewormpillcb.Text = "Deworm Pill"
         Me.dewormpillcb.UseVisualStyleBackColor = True
         '
@@ -222,7 +224,7 @@ Partial Class VaccinationInformation
         Me.heartwormcb.Location = New System.Drawing.Point(674, 233)
         Me.heartwormcb.Name = "heartwormcb"
         Me.heartwormcb.Size = New System.Drawing.Size(198, 22)
-        Me.heartwormcb.TabIndex = 15
+        Me.heartwormcb.TabIndex = 31
         Me.heartwormcb.Text = "Heartworm Preventative"
         Me.heartwormcb.UseVisualStyleBackColor = True
         '
@@ -240,7 +242,7 @@ Partial Class VaccinationInformation
         '
         Me.MonthCalendar1.Location = New System.Drawing.Point(15, 71)
         Me.MonthCalendar1.Name = "MonthCalendar1"
-        Me.MonthCalendar1.TabIndex = 17
+        Me.MonthCalendar1.TabIndex = 18
         '
         'bordetellapricelbl
         '
@@ -331,7 +333,7 @@ Partial Class VaccinationInformation
         Me.costtxb.Location = New System.Drawing.Point(744, 324)
         Me.costtxb.Name = "costtxb"
         Me.costtxb.Size = New System.Drawing.Size(50, 23)
-        Me.costtxb.TabIndex = 27
+        Me.costtxb.TabIndex = 32
         '
         'costdollarsignlbl
         '
@@ -365,7 +367,7 @@ Partial Class VaccinationInformation
         Me.payingamounttxb.Location = New System.Drawing.Point(817, 359)
         Me.payingamounttxb.Name = "payingamounttxb"
         Me.payingamounttxb.Size = New System.Drawing.Size(50, 23)
-        Me.payingamounttxb.TabIndex = 31
+        Me.payingamounttxb.TabIndex = 33
         '
         'changelbl
         '
@@ -381,14 +383,14 @@ Partial Class VaccinationInformation
         Me.changetxb.Location = New System.Drawing.Point(764, 401)
         Me.changetxb.Name = "changetxb"
         Me.changetxb.Size = New System.Drawing.Size(47, 23)
-        Me.changetxb.TabIndex = 33
+        Me.changetxb.TabIndex = 34
         '
         'caccineinfoexitbt
         '
         Me.caccineinfoexitbt.Location = New System.Drawing.Point(683, 515)
         Me.caccineinfoexitbt.Name = "caccineinfoexitbt"
         Me.caccineinfoexitbt.Size = New System.Drawing.Size(75, 23)
-        Me.caccineinfoexitbt.TabIndex = 34
+        Me.caccineinfoexitbt.TabIndex = 35
         Me.caccineinfoexitbt.Text = "Exit"
         Me.caccineinfoexitbt.UseVisualStyleBackColor = True
         '
@@ -397,7 +399,7 @@ Partial Class VaccinationInformation
         Me.vaccineinforesetbt.Location = New System.Drawing.Point(784, 515)
         Me.vaccineinforesetbt.Name = "vaccineinforesetbt"
         Me.vaccineinforesetbt.Size = New System.Drawing.Size(75, 23)
-        Me.vaccineinforesetbt.TabIndex = 35
+        Me.vaccineinforesetbt.TabIndex = 366
         Me.vaccineinforesetbt.Text = "Reset"
         Me.vaccineinforesetbt.UseVisualStyleBackColor = True
         '
@@ -406,7 +408,7 @@ Partial Class VaccinationInformation
         Me.vaccineinfocontinuebt.Location = New System.Drawing.Point(881, 515)
         Me.vaccineinfocontinuebt.Name = "vaccineinfocontinuebt"
         Me.vaccineinfocontinuebt.Size = New System.Drawing.Size(90, 23)
-        Me.vaccineinfocontinuebt.TabIndex = 36
+        Me.vaccineinfocontinuebt.TabIndex = 37
         Me.vaccineinfocontinuebt.Text = "Continue"
         Me.vaccineinfocontinuebt.UseVisualStyleBackColor = True
         '
@@ -419,11 +421,29 @@ Partial Class VaccinationInformation
         Me.changedollarsignlbl.TabIndex = 37
         Me.changedollarsignlbl.Text = "$"
         '
+        'Vaccineinfodatelbl
+        '
+        Me.Vaccineinfodatelbl.AutoSize = True
+        Me.Vaccineinfodatelbl.Location = New System.Drawing.Point(671, 451)
+        Me.Vaccineinfodatelbl.Name = "Vaccineinfodatelbl"
+        Me.Vaccineinfodatelbl.Size = New System.Drawing.Size(105, 18)
+        Me.Vaccineinfodatelbl.TabIndex = 367
+        Me.Vaccineinfodatelbl.Text = "Today's date:"
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Location = New System.Drawing.Point(782, 448)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(208, 23)
+        Me.DateTimePicker1.TabIndex = 36
+        '
         'VaccinationInformation
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(981, 550)
+        Me.ClientSize = New System.Drawing.Size(1002, 550)
+        Me.Controls.Add(Me.DateTimePicker1)
+        Me.Controls.Add(Me.Vaccineinfodatelbl)
         Me.Controls.Add(Me.changedollarsignlbl)
         Me.Controls.Add(Me.vaccineinfocontinuebt)
         Me.Controls.Add(Me.vaccineinforesetbt)
@@ -508,4 +528,6 @@ Partial Class VaccinationInformation
     Friend WithEvents vaccineinforesetbt As Button
     Friend WithEvents vaccineinfocontinuebt As Button
     Friend WithEvents changedollarsignlbl As Label
+    Friend WithEvents Vaccineinfodatelbl As Label
+    Friend WithEvents DateTimePicker1 As DateTimePicker
 End Class
