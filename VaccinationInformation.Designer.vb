@@ -38,8 +38,6 @@ Partial Class VaccinationInformation
         Me.CheckBox6 = New System.Windows.Forms.CheckBox()
         Me.dewormpillcb = New System.Windows.Forms.CheckBox()
         Me.heartwormcb = New System.Windows.Forms.CheckBox()
-        Me.lastvaccinelbl = New System.Windows.Forms.Label()
-        Me.MonthCalendar1 = New System.Windows.Forms.MonthCalendar()
         Me.bordetellapricelbl = New System.Windows.Forms.Label()
         Me.paraininfluenzapricelbl = New System.Windows.Forms.Label()
         Me.leptospirosispricelbl = New System.Windows.Forms.Label()
@@ -68,7 +66,7 @@ Partial Class VaccinationInformation
         '
         Me.Vaccinationinfolbl.AutoSize = True
         Me.Vaccinationinfolbl.Font = New System.Drawing.Font("MS Reference Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Vaccinationinfolbl.Location = New System.Drawing.Point(0, 0)
+        Me.Vaccinationinfolbl.Location = New System.Drawing.Point(58, 166)
         Me.Vaccinationinfolbl.Name = "Vaccinationinfolbl"
         Me.Vaccinationinfolbl.Size = New System.Drawing.Size(320, 29)
         Me.Vaccinationinfolbl.TabIndex = 0
@@ -80,9 +78,9 @@ Partial Class VaccinationInformation
         Me.previousvaclbl.Font = New System.Drawing.Font("MS Reference Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.previousvaclbl.Location = New System.Drawing.Point(11, 286)
         Me.previousvaclbl.Name = "previousvaclbl"
-        Me.previousvaclbl.Size = New System.Drawing.Size(472, 22)
+        Me.previousvaclbl.Size = New System.Drawing.Size(487, 22)
         Me.previousvaclbl.TabIndex = 1
-        Me.previousvaclbl.Text = "Did your dog receive any previous vaccinations?"
+        Me.previousvaclbl.Text = "*Please enter any previous vaccinations recieved."
         '
         'bordetellacb
         '
@@ -152,9 +150,9 @@ Partial Class VaccinationInformation
         Me.availablevaccineslbl.Font = New System.Drawing.Font("MS Reference Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.availablevaccineslbl.Location = New System.Drawing.Point(670, 40)
         Me.availablevaccineslbl.Name = "availablevaccineslbl"
-        Me.availablevaccineslbl.Size = New System.Drawing.Size(224, 22)
+        Me.availablevaccineslbl.Size = New System.Drawing.Size(233, 22)
         Me.availablevaccineslbl.TabIndex = 8
-        Me.availablevaccineslbl.Text = "Available Vaccinations"
+        Me.availablevaccineslbl.Text = "Available Vaccinations:"
         '
         'CheckBox2
         '
@@ -213,9 +211,9 @@ Partial Class VaccinationInformation
         Me.dewormpillcb.AutoSize = True
         Me.dewormpillcb.Location = New System.Drawing.Point(674, 205)
         Me.dewormpillcb.Name = "dewormpillcb"
-        Me.dewormpillcb.Size = New System.Drawing.Size(110, 22)
+        Me.dewormpillcb.Size = New System.Drawing.Size(131, 22)
         Me.dewormpillcb.TabIndex = 30
-        Me.dewormpillcb.Text = "Deworm Pill"
+        Me.dewormpillcb.Text = "Deworming Pill"
         Me.dewormpillcb.UseVisualStyleBackColor = True
         '
         'heartwormcb
@@ -227,22 +225,6 @@ Partial Class VaccinationInformation
         Me.heartwormcb.TabIndex = 31
         Me.heartwormcb.Text = "Heartworm Preventative"
         Me.heartwormcb.UseVisualStyleBackColor = True
-        '
-        'lastvaccinelbl
-        '
-        Me.lastvaccinelbl.AutoSize = True
-        Me.lastvaccinelbl.Font = New System.Drawing.Font("MS Reference Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lastvaccinelbl.Location = New System.Drawing.Point(13, 40)
-        Me.lastvaccinelbl.Name = "lastvaccinelbl"
-        Me.lastvaccinelbl.Size = New System.Drawing.Size(322, 22)
-        Me.lastvaccinelbl.TabIndex = 16
-        Me.lastvaccinelbl.Text = "When was your last vaccination?"
-        '
-        'MonthCalendar1
-        '
-        Me.MonthCalendar1.Location = New System.Drawing.Point(15, 71)
-        Me.MonthCalendar1.Name = "MonthCalendar1"
-        Me.MonthCalendar1.TabIndex = 18
         '
         'bordetellapricelbl
         '
@@ -330,7 +312,7 @@ Partial Class VaccinationInformation
         '
         'costtxb
         '
-        Me.costtxb.Location = New System.Drawing.Point(744, 324)
+        Me.costtxb.Location = New System.Drawing.Point(940, 320)
         Me.costtxb.Name = "costtxb"
         Me.costtxb.Size = New System.Drawing.Size(50, 23)
         Me.costtxb.TabIndex = 32
@@ -338,7 +320,7 @@ Partial Class VaccinationInformation
         'costdollarsignlbl
         '
         Me.costdollarsignlbl.AutoSize = True
-        Me.costdollarsignlbl.Location = New System.Drawing.Point(721, 326)
+        Me.costdollarsignlbl.Location = New System.Drawing.Point(917, 324)
         Me.costdollarsignlbl.Name = "costdollarsignlbl"
         Me.costdollarsignlbl.Size = New System.Drawing.Size(17, 18)
         Me.costdollarsignlbl.TabIndex = 28
@@ -356,7 +338,7 @@ Partial Class VaccinationInformation
         'payingamountdollarsignlbl
         '
         Me.payingamountdollarsignlbl.AutoSize = True
-        Me.payingamountdollarsignlbl.Location = New System.Drawing.Point(794, 362)
+        Me.payingamountdollarsignlbl.Location = New System.Drawing.Point(917, 360)
         Me.payingamountdollarsignlbl.Name = "payingamountdollarsignlbl"
         Me.payingamountdollarsignlbl.Size = New System.Drawing.Size(17, 18)
         Me.payingamountdollarsignlbl.TabIndex = 30
@@ -364,7 +346,7 @@ Partial Class VaccinationInformation
         '
         'payingamounttxb
         '
-        Me.payingamounttxb.Location = New System.Drawing.Point(817, 359)
+        Me.payingamounttxb.Location = New System.Drawing.Point(940, 357)
         Me.payingamounttxb.Name = "payingamounttxb"
         Me.payingamounttxb.Size = New System.Drawing.Size(50, 23)
         Me.payingamounttxb.TabIndex = 33
@@ -380,9 +362,9 @@ Partial Class VaccinationInformation
         '
         'changetxb
         '
-        Me.changetxb.Location = New System.Drawing.Point(764, 401)
+        Me.changetxb.Location = New System.Drawing.Point(940, 399)
         Me.changetxb.Name = "changetxb"
-        Me.changetxb.Size = New System.Drawing.Size(47, 23)
+        Me.changetxb.Size = New System.Drawing.Size(50, 23)
         Me.changetxb.TabIndex = 34
         '
         'caccineinfoexitbt
@@ -415,7 +397,7 @@ Partial Class VaccinationInformation
         'changedollarsignlbl
         '
         Me.changedollarsignlbl.AutoSize = True
-        Me.changedollarsignlbl.Location = New System.Drawing.Point(741, 404)
+        Me.changedollarsignlbl.Location = New System.Drawing.Point(917, 404)
         Me.changedollarsignlbl.Name = "changedollarsignlbl"
         Me.changedollarsignlbl.Size = New System.Drawing.Size(17, 18)
         Me.changedollarsignlbl.TabIndex = 37
@@ -432,7 +414,7 @@ Partial Class VaccinationInformation
         '
         'DateTimePicker1
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(782, 448)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(793, 448)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(208, 23)
         Me.DateTimePicker1.TabIndex = 36
@@ -441,7 +423,7 @@ Partial Class VaccinationInformation
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1002, 550)
+        Me.ClientSize = New System.Drawing.Size(1002, 544)
         Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.Vaccineinfodatelbl)
         Me.Controls.Add(Me.changedollarsignlbl)
@@ -464,8 +446,6 @@ Partial Class VaccinationInformation
         Me.Controls.Add(Me.leptospirosispricelbl)
         Me.Controls.Add(Me.paraininfluenzapricelbl)
         Me.Controls.Add(Me.bordetellapricelbl)
-        Me.Controls.Add(Me.MonthCalendar1)
-        Me.Controls.Add(Me.lastvaccinelbl)
         Me.Controls.Add(Me.heartwormcb)
         Me.Controls.Add(Me.dewormpillcb)
         Me.Controls.Add(Me.CheckBox2)
@@ -506,8 +486,6 @@ Partial Class VaccinationInformation
     Friend WithEvents CheckBox6 As CheckBox
     Friend WithEvents dewormpillcb As CheckBox
     Friend WithEvents heartwormcb As CheckBox
-    Friend WithEvents lastvaccinelbl As Label
-    Friend WithEvents MonthCalendar1 As MonthCalendar
     Friend WithEvents bordetellapricelbl As Label
     Friend WithEvents paraininfluenzapricelbl As Label
     Friend WithEvents leptospirosispricelbl As Label

@@ -31,7 +31,7 @@
         dogbreedtxb.Clear()
         dognametxb.Clear()
         colortxb.Clear()
-        specialmarktxb.Clear()
+        rtbSpecialMarkings.Clear()
         Femalerb.Checked = False
         malerb.Checked = False
         rbYes.Checked = False
@@ -39,11 +39,11 @@
         cbDogAge.ResetText()
         nudWeight.ResetText()
         ownernametxb.Clear()
-        ownerphonetxb.Clear()
+        mtbOwnerNum.Clear()
         owneraddresstxb.Clear()
         owneremailtxb.Clear()
         vetnamtxb.Clear()
-        vetphonetxb.Clear()
+        mtbVetNum.Clear()
 
     End Sub
 
@@ -53,7 +53,7 @@
         stDogName = dognametxb.Text
         stDogBreed = dogbreedtxb.Text
         stDogColor = colortxb.Text
-        stSpecialMark = specialmarktxb.Text
+        stSpecialMark = rtbSpecialMarkings.Text
         'Code for the gender radio boxes.
         If Femalerb.Checked Then
             stGender = "Female"
@@ -72,19 +72,19 @@
 
         'Code for owner information.
         stOwnerName = ownernametxb.Text
-        dbOwnerNumber = ownerphonetxb.Text
+        dbOwnerNumber = mtbOwnerNum.Text
         stEmail = owneremailtxb.Text
         stAddress = owneraddresstxb.Text
 
         'Code for veteranarian information.
         stVetName = vetnamtxb.Text
-        dbVetNumber = vetphonetxb.Text
+        dbVetNumber = mtbVetNum.Text
 
         VaccinationInformation.Show()
         Me.Hide()
     End Sub
 
-    Private Sub gbDogInfo_Enter(sender As Object, e As EventArgs) Handles gbDogInfo.Enter
+    Private Sub nudWeight_ValueChanged(sender As Object, e As EventArgs) Handles nudWeight.ValueChanged
 
     End Sub
 End Class
