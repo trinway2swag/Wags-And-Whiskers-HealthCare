@@ -190,6 +190,8 @@
   <ItemGroup>
     <Content Include="icon.ico" />
     <Content Include="iconnew.ico" />
+    <None Include="Resources\vaccinfo.png" />
+    <None Include="Resources\wags .png" />
     <None Include="Resources\newsplashscreen.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

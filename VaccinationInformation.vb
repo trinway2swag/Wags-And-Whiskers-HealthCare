@@ -19,7 +19,7 @@
 
     End Sub
 
-    Private Sub paymentinformationlbl_Click(sender As Object, e As EventArgs) Handles paymentinformationlbl.Click
+    Private Sub paymentinformationlbl_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -51,4 +51,15 @@
         Me.Hide()
     End Sub
 
+    Private Sub Vaccinationinfolbl_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub previousvaclbl_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub MonthCalendar1_DateChanged(sender As Object, e As DateRangeEventArgs) Handles MonthCalendar1.DateChanged
+
+    End Sub
 End Class
