@@ -49,7 +49,62 @@
 
     'Code for the continue button
     Private Sub btnContinue_Click(sender As Object, e As EventArgs) Handles btnContinue.Click
-
+        'error messages for General Information Form
+        If dognametxb.Text = "" Then
+            MessageBox.Show("Please Enter Your Dogs name")
+            dognametxb.Focus()
+            Exit Sub
+        End If
+        If dogbreedtxb.Text = "" Then
+            MessageBox.Show("Please Enter Your Dogs Breed")
+            dogbreedtxb.Focus()
+            Exit Sub
+        End If
+        If colortxb.Text = "" Then
+            MessageBox.Show("Please Enter the Color of your Dog")
+            colortxb.Focus()
+            Exit Sub
+        End If
+        If cbDogAge.Text = "" Then
+            MessageBox.Show("Please Enter Your Dogs Age")
+            cbDogAge.Focus()
+            Exit Sub
+        End If
+        If nudWeight.Text = "" Then
+            MessageBox.Show("Please Enter Your Dogs Weight")
+            nudWeight.Focus()
+            Exit Sub
+        End If
+        If ownernametxb.Text = "" Then
+            MessageBox.Show("Please Enter the Owners Name")
+            ownernametxb.Focus()
+            Exit Sub
+        End If
+        If mtbOwnerNum.Text = "" Then
+            MessageBox.Show("Please Enter the Owners Phone Number")
+            mtbOwnerNum.Focus()
+            Exit Sub
+        End If
+        If owneremailtxb.Text = "" Then
+            MessageBox.Show("Please Enter the Owners Email")
+            owneremailtxb.Focus()
+            Exit Sub
+        End If
+        If owneraddresstxb.Text = "" Then
+            MessageBox.Show("Please Enter the Address")
+            owneraddresstxb.Focus()
+            Exit Sub
+        End If
+        If vetnamtxb.Text = "" Then
+            MessageBox.Show("Please Enter the Veterinarian's Name")
+            vetnamtxb.Focus()
+            Exit Sub
+        End If
+        If mtbVetNum.Text = "" Then
+            MessageBox.Show("Please Enter the Veterinarian's Number")
+            mtbVetNum.Focus()
+            Exit Sub
+        End If
         stDogName = dognametxb.Text
         stDogBreed = dogbreedtxb.Text
         stDogColor = colortxb.Text

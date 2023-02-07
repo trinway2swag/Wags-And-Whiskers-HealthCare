@@ -49,6 +49,7 @@
     Private Sub btnContinue_Click(sender As Object, e As EventArgs) Handles vaccineinfocontinuebt.Click
         Outputform.Show()
         Me.Hide()
+
     End Sub
 
     Private Sub Vaccinationinfolbl_Click(sender As Object, e As EventArgs)
@@ -60,6 +61,10 @@
     End Sub
 
     Private Sub MonthCalendar1_DateChanged(sender As Object, e As DateRangeEventArgs) Handles MonthCalendar1.DateChanged
+
+    End Sub
+
+    Private Sub VaccinationInformation_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 End Class

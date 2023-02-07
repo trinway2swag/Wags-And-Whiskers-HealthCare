@@ -17,8 +17,8 @@ Partial Class WagsAndWhiskersLogin
     Friend WithEvents LogoPictureBox As System.Windows.Forms.PictureBox
     Friend WithEvents UsernameLabel As System.Windows.Forms.Label
     Friend WithEvents PasswordLabel As System.Windows.Forms.Label
-    Friend WithEvents UsernameTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents PasswordTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents usernametb As System.Windows.Forms.TextBox
+    Friend WithEvents passwordtb As System.Windows.Forms.TextBox
     Friend WithEvents OK As System.Windows.Forms.Button
     Friend WithEvents Cancel As System.Windows.Forms.Button
 
@@ -30,15 +30,18 @@ Partial Class WagsAndWhiskersLogin
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(WagsAndWhiskersLogin))
         Me.LogoPictureBox = New System.Windows.Forms.PictureBox()
         Me.UsernameLabel = New System.Windows.Forms.Label()
         Me.PasswordLabel = New System.Windows.Forms.Label()
-        Me.UsernameTextBox = New System.Windows.Forms.TextBox()
-        Me.PasswordTextBox = New System.Windows.Forms.TextBox()
+        Me.usernametb = New System.Windows.Forms.TextBox()
+        Me.passwordtb = New System.Windows.Forms.TextBox()
         Me.OK = New System.Windows.Forms.Button()
         Me.Cancel = New System.Windows.Forms.Button()
+        Me.Usernameerrorprovider = New System.Windows.Forms.ErrorProvider(Me.components)
         CType(Me.LogoPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Usernameerrorprovider, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'LogoPictureBox
@@ -73,20 +76,20 @@ Partial Class WagsAndWhiskersLogin
         Me.PasswordLabel.Text = "&Password"
         Me.PasswordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'UsernameTextBox
+        'usernametb
         '
-        Me.UsernameTextBox.Location = New System.Drawing.Point(183, 80)
-        Me.UsernameTextBox.Name = "UsernameTextBox"
-        Me.UsernameTextBox.Size = New System.Drawing.Size(220, 22)
-        Me.UsernameTextBox.TabIndex = 1
+        Me.usernametb.Location = New System.Drawing.Point(183, 80)
+        Me.usernametb.Name = "usernametb"
+        Me.usernametb.Size = New System.Drawing.Size(220, 22)
+        Me.usernametb.TabIndex = 1
         '
-        'PasswordTextBox
+        'passwordtb
         '
-        Me.PasswordTextBox.Location = New System.Drawing.Point(183, 143)
-        Me.PasswordTextBox.Name = "PasswordTextBox"
-        Me.PasswordTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.PasswordTextBox.Size = New System.Drawing.Size(220, 22)
-        Me.PasswordTextBox.TabIndex = 3
+        Me.passwordtb.Location = New System.Drawing.Point(183, 143)
+        Me.passwordtb.Name = "passwordtb"
+        Me.passwordtb.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.passwordtb.Size = New System.Drawing.Size(220, 22)
+        Me.passwordtb.TabIndex = 3
         '
         'OK
         '
@@ -105,6 +108,10 @@ Partial Class WagsAndWhiskersLogin
         Me.Cancel.TabIndex = 5
         Me.Cancel.Text = "&Cancel"
         '
+        'Usernameerrorprovider
+        '
+        Me.Usernameerrorprovider.ContainerControl = Me
+        '
         'WagsAndWhiskersLogin
         '
         Me.AcceptButton = Me.OK
@@ -115,8 +122,8 @@ Partial Class WagsAndWhiskersLogin
         Me.ClientSize = New System.Drawing.Size(441, 255)
         Me.Controls.Add(Me.Cancel)
         Me.Controls.Add(Me.OK)
-        Me.Controls.Add(Me.PasswordTextBox)
-        Me.Controls.Add(Me.UsernameTextBox)
+        Me.Controls.Add(Me.passwordtb)
+        Me.Controls.Add(Me.usernametb)
         Me.Controls.Add(Me.PasswordLabel)
         Me.Controls.Add(Me.UsernameLabel)
         Me.Controls.Add(Me.LogoPictureBox)
@@ -129,8 +136,11 @@ Partial Class WagsAndWhiskersLogin
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "WagsAndWhiskersLogin"
         CType(Me.LogoPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Usernameerrorprovider, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
+
+    Friend WithEvents Usernameerrorprovider As ErrorProvider
 End Class
