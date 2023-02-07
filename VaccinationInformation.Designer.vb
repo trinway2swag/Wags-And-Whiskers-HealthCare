@@ -66,7 +66,8 @@ Partial Class VaccinationInformation
         '
         Me.Vaccinationinfolbl.AutoSize = True
         Me.Vaccinationinfolbl.Font = New System.Drawing.Font("MS Reference Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Vaccinationinfolbl.Location = New System.Drawing.Point(58, 166)
+        Me.Vaccinationinfolbl.ForeColor = System.Drawing.Color.DarkCyan
+        Me.Vaccinationinfolbl.Location = New System.Drawing.Point(10, 9)
         Me.Vaccinationinfolbl.Name = "Vaccinationinfolbl"
         Me.Vaccinationinfolbl.Size = New System.Drawing.Size(320, 29)
         Me.Vaccinationinfolbl.TabIndex = 0
@@ -76,6 +77,7 @@ Partial Class VaccinationInformation
         '
         Me.previousvaclbl.AutoSize = True
         Me.previousvaclbl.Font = New System.Drawing.Font("MS Reference Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.previousvaclbl.ForeColor = System.Drawing.Color.DarkCyan
         Me.previousvaclbl.Location = New System.Drawing.Point(11, 286)
         Me.previousvaclbl.Name = "previousvaclbl"
         Me.previousvaclbl.Size = New System.Drawing.Size(487, 22)
@@ -147,10 +149,11 @@ Partial Class VaccinationInformation
         'availablevaccineslbl
         '
         Me.availablevaccineslbl.AutoSize = True
-        Me.availablevaccineslbl.Font = New System.Drawing.Font("MS Reference Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.availablevaccineslbl.Font = New System.Drawing.Font("MS Reference Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.availablevaccineslbl.ForeColor = System.Drawing.Color.DarkCyan
         Me.availablevaccineslbl.Location = New System.Drawing.Point(670, 40)
         Me.availablevaccineslbl.Name = "availablevaccineslbl"
-        Me.availablevaccineslbl.Size = New System.Drawing.Size(233, 22)
+        Me.availablevaccineslbl.Size = New System.Drawing.Size(309, 29)
         Me.availablevaccineslbl.TabIndex = 8
         Me.availablevaccineslbl.Text = "Available Vaccinations:"
         '
@@ -294,6 +297,7 @@ Partial Class VaccinationInformation
         '
         Me.paymentinformationlbl.AutoSize = True
         Me.paymentinformationlbl.Font = New System.Drawing.Font("MS Reference Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.paymentinformationlbl.ForeColor = System.Drawing.Color.DarkCyan
         Me.paymentinformationlbl.Location = New System.Drawing.Point(669, 279)
         Me.paymentinformationlbl.Name = "paymentinformationlbl"
         Me.paymentinformationlbl.Size = New System.Drawing.Size(283, 29)
@@ -423,6 +427,7 @@ Partial Class VaccinationInformation
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1002, 544)
         Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.Vaccineinfodatelbl)

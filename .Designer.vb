@@ -56,12 +56,12 @@ Partial Class GeneralInformationForm
         Me.vetnamtxb = New System.Windows.Forms.TextBox()
         Me.vetphonelb = New System.Windows.Forms.Label()
         Me.gbOwnerInfo = New System.Windows.Forms.GroupBox()
+        Me.mtbOwnerNum = New System.Windows.Forms.MaskedTextBox()
         Me.gbVetInfo = New System.Windows.Forms.GroupBox()
+        Me.mtbVetNum = New System.Windows.Forms.MaskedTextBox()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.btnReset = New System.Windows.Forms.Button()
         Me.btnContinue = New System.Windows.Forms.Button()
-        Me.mtbOwnerNum = New System.Windows.Forms.MaskedTextBox()
-        Me.mtbVetNum = New System.Windows.Forms.MaskedTextBox()
         CType(Me.GeneralInformationHeader, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.gbDogInfo.SuspendLayout()
         Me.gbSpayedNeutered.SuspendLayout()
@@ -207,6 +207,7 @@ Partial Class GeneralInformationForm
         Me.gbDogInfo.Controls.Add(Me.specialmarklbl)
         Me.gbDogInfo.Controls.Add(Me.lblDogAge)
         Me.gbDogInfo.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gbDogInfo.ForeColor = System.Drawing.Color.DarkCyan
         Me.gbDogInfo.Location = New System.Drawing.Point(0, 119)
         Me.gbDogInfo.Name = "gbDogInfo"
         Me.gbDogInfo.Size = New System.Drawing.Size(396, 577)
@@ -412,12 +413,22 @@ Partial Class GeneralInformationForm
         Me.gbOwnerInfo.Controls.Add(Me.owneremailtxb)
         Me.gbOwnerInfo.Controls.Add(Me.owneraddresslb)
         Me.gbOwnerInfo.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gbOwnerInfo.ForeColor = System.Drawing.Color.DarkCyan
         Me.gbOwnerInfo.Location = New System.Drawing.Point(402, 119)
         Me.gbOwnerInfo.Name = "gbOwnerInfo"
         Me.gbOwnerInfo.Size = New System.Drawing.Size(416, 353)
         Me.gbOwnerInfo.TabIndex = 0
         Me.gbOwnerInfo.TabStop = False
         Me.gbOwnerInfo.Text = "Owner Information"
+        '
+        'mtbOwnerNum
+        '
+        Me.mtbOwnerNum.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.mtbOwnerNum.Location = New System.Drawing.Point(15, 143)
+        Me.mtbOwnerNum.Mask = "(999) 000-0000"
+        Me.mtbOwnerNum.Name = "mtbOwnerNum"
+        Me.mtbOwnerNum.Size = New System.Drawing.Size(100, 34)
+        Me.mtbOwnerNum.TabIndex = 15
         '
         'gbVetInfo
         '
@@ -426,12 +437,22 @@ Partial Class GeneralInformationForm
         Me.gbVetInfo.Controls.Add(Me.vetphonelb)
         Me.gbVetInfo.Controls.Add(Me.vetnamtxb)
         Me.gbVetInfo.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gbVetInfo.ForeColor = System.Drawing.Color.DarkCyan
         Me.gbVetInfo.Location = New System.Drawing.Point(402, 479)
         Me.gbVetInfo.Name = "gbVetInfo"
         Me.gbVetInfo.Size = New System.Drawing.Size(416, 217)
         Me.gbVetInfo.TabIndex = 0
         Me.gbVetInfo.TabStop = False
         Me.gbVetInfo.Text = "Veteranarian Information"
+        '
+        'mtbVetNum
+        '
+        Me.mtbVetNum.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.mtbVetNum.Location = New System.Drawing.Point(12, 148)
+        Me.mtbVetNum.Mask = "(999) 000-0000"
+        Me.mtbVetNum.Name = "mtbVetNum"
+        Me.mtbVetNum.Size = New System.Drawing.Size(100, 34)
+        Me.mtbVetNum.TabIndex = 16
         '
         'btnExit
         '
@@ -460,28 +481,11 @@ Partial Class GeneralInformationForm
         Me.btnContinue.Text = "Continue"
         Me.btnContinue.UseVisualStyleBackColor = True
         '
-        'mtbOwnerNum
-        '
-        Me.mtbOwnerNum.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.mtbOwnerNum.Location = New System.Drawing.Point(15, 143)
-        Me.mtbOwnerNum.Mask = "(999) 000-0000"
-        Me.mtbOwnerNum.Name = "mtbOwnerNum"
-        Me.mtbOwnerNum.Size = New System.Drawing.Size(100, 34)
-        Me.mtbOwnerNum.TabIndex = 15
-        '
-        'mtbVetNum
-        '
-        Me.mtbVetNum.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.mtbVetNum.Location = New System.Drawing.Point(12, 148)
-        Me.mtbVetNum.Mask = "(999) 000-0000"
-        Me.mtbVetNum.Name = "mtbVetNum"
-        Me.mtbVetNum.Size = New System.Drawing.Size(100, 34)
-        Me.mtbVetNum.TabIndex = 16
-        '
         'GeneralInformationForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(821, 744)
         Me.Controls.Add(Me.btnContinue)
         Me.Controls.Add(Me.btnReset)
