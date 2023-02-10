@@ -92,10 +92,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="OutputForm.Designer.vb">
+      <DependentUpon>OutputForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form1.vb">
+    <Compile Include="OutputForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GeneralinformationForm.vb">
@@ -141,8 +141,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="OutputForm.resx">
+      <DependentUpon>OutputForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GeneralinformationForm.resx">
       <DependentUpon>GeneralinformationForm.vb</DependentUpon>
@@ -190,6 +190,7 @@
   <ItemGroup>
     <Content Include="icon.ico" />
     <Content Include="iconnew.ico" />
+    <None Include="Resources\outputheader.png" />
     <None Include="Resources\vaccinfo.png" />
     <None Include="Resources\wags .png" />
     <None Include="Resources\newsplashscreen.png" />
