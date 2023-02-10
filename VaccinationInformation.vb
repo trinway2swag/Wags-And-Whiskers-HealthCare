@@ -43,7 +43,6 @@
                 avvacccheckbx.Checked = False
             End If
         Next
-        costtxb.Clear()
     End Sub
     'code for the check boxes in the previous vaccination groupbox
     'code for the continue button
@@ -66,17 +65,18 @@
         Else
             stPreLep = ""
         End If
+
         If prevparaininfluenzacb.Checked Then
             stPreParIn = "Parain Influenza"
         Else
             stPreParIn = ""
         End If
+
         If prevrabiescb.Checked Then
             stPreRab = "Rabies"
         Else
             stPreRab = ""
         End If
-        stAllPrevVacc = stPreBor & " " & stPreCanIn & " " & stPreLep & " " & stPreParIn & " " & stPreRab
 
         If cbAvBordetellavacc.Checked Then
             stAvBor = "Boretella"
@@ -85,6 +85,7 @@
             stAvBor = ""
             dbBor = 0
         End If
+
         If cbAvCanInflu.Checked Then
             stAvCanIn = "Canine Influenza"
             dbCanIn = 20
@@ -92,6 +93,7 @@
             stAvCanIn = ""
             dbCanIn = 0
         End If
+
         If cbAvDeworm.Checked Then
             stAvDeworm = "Deworming Pill"
             dbDeworm = 10
@@ -99,6 +101,7 @@
             stAvDeworm = ""
             dbDeworm = 0
         End If
+
         If cbAvHeartworm.Checked Then
             stAvHeartWorm = "Heartworm Preventative"
             dbHeartworm = 10
@@ -113,6 +116,7 @@
             stAvLep = ""
             dbLep = 0
         End If
+
         If cbAvParInflu.Checked Then
             stAvParIn = "Parain Influenza"
             dbParIn = 30
@@ -120,6 +124,7 @@
             stAvParIn = ""
             dbParIn = 0
         End If
+
         If cbAvRabies.Checked Then
             stAvRab = "Rabies"
             dbRab = 15

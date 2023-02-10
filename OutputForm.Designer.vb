@@ -503,15 +503,13 @@ Partial Class Outputform
         '
         'vaccinationsoutputgb
         '
-        Me.vaccinationsoutputgb.Controls.Add(Me.lblPurchasedVacc)
         Me.vaccinationsoutputgb.Controls.Add(Me.lblPrevVaccines)
-        Me.vaccinationsoutputgb.Controls.Add(Me.lblVaccPurchase)
         Me.vaccinationsoutputgb.Controls.Add(Me.lblVaccRecieve)
         Me.vaccinationsoutputgb.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.vaccinationsoutputgb.ForeColor = System.Drawing.Color.DarkCyan
         Me.vaccinationsoutputgb.Location = New System.Drawing.Point(445, 175)
         Me.vaccinationsoutputgb.Name = "vaccinationsoutputgb"
-        Me.vaccinationsoutputgb.Size = New System.Drawing.Size(443, 272)
+        Me.vaccinationsoutputgb.Size = New System.Drawing.Size(443, 256)
         Me.vaccinationsoutputgb.TabIndex = 3
         Me.vaccinationsoutputgb.TabStop = False
         Me.vaccinationsoutputgb.Text = "Vaccinations"
@@ -521,7 +519,7 @@ Partial Class Outputform
         Me.lblPurchasedVacc.AutoSize = True
         Me.lblPurchasedVacc.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPurchasedVacc.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.lblPurchasedVacc.Location = New System.Drawing.Point(27, 177)
+        Me.lblPurchasedVacc.Location = New System.Drawing.Point(462, 388)
         Me.lblPurchasedVacc.Name = "lblPurchasedVacc"
         Me.lblPurchasedVacc.Size = New System.Drawing.Size(156, 18)
         Me.lblPurchasedVacc.TabIndex = 19
@@ -545,7 +543,7 @@ Partial Class Outputform
         Me.lblVaccPurchase.AutoSize = True
         Me.lblVaccPurchase.Font = New System.Drawing.Font("MS Reference Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblVaccPurchase.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.lblVaccPurchase.Location = New System.Drawing.Point(6, 134)
+        Me.lblVaccPurchase.Location = New System.Drawing.Point(451, 339)
         Me.lblVaccPurchase.Name = "lblVaccPurchase"
         Me.lblVaccPurchase.Size = New System.Drawing.Size(243, 22)
         Me.lblVaccPurchase.TabIndex = 38
@@ -668,6 +666,8 @@ Partial Class Outputform
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(900, 731)
+        Me.Controls.Add(Me.lblPurchasedVacc)
+        Me.Controls.Add(Me.lblVaccPurchase)
         Me.Controls.Add(Me.btnPrint)
         Me.Controls.Add(Me.outputownerInfogb)
         Me.Controls.Add(Me.pbOutputHeader)
@@ -691,6 +691,7 @@ Partial Class Outputform
         Me.gbVetInfo.PerformLayout()
         CType(Me.pbOutputHeader, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 

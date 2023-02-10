@@ -1,9 +1,15 @@
 ﻿Public Class Outputform
-    Public stAllPrevVacc As String
-    Public stAllPurVacc As String
-    Public dbTotalCost As Double
+
     Private Sub OutputForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim stAllPrevVacc As String
+        Dim stAllPurVacc As String
+        Dim dbTotalCost As Double
+        Dim test As String
+
+        test = VaccinationInformation.stAvBor & " " & VaccinationInformation.stAvCanIn & " " & VaccinationInformation.stAvDeworm & " " & VaccinationInformation.stAvHeartWorm & " " & VaccinationInformation.stAvLep & " " & VaccinationInformation.stAvParIn & " " & VaccinationInformation.stAvRab
+        lblPurchasedVacc.Text = test
         lblDogName.Text = GeneralInformationForm.stDogName
+
         breedoutputlbl.Text = GeneralInformationForm.stDogBreed
         weightoutputlbl.Text = GeneralInformationForm.dbWeight
         coloroutputlbl.Text = GeneralInformationForm.stDogColor
@@ -19,7 +25,7 @@
 
         vetnameoutputlbl.Text = GeneralInformationForm.stVetName
         vetnumberoutputlbl.Text = GeneralInformationForm.dbVetNumber
-        lblPrevVaccines.Text = VaccinationInformation.stAvBor & " " & VaccinationInformation.stAvCanIn & " " & VaccinationInformation.stAvDeworm & " " & VaccinationInformation.stAvHeartWorm & " " & VaccinationInformation.stAvLep & " " & VaccinationInformation.stAvParIn & " " & VaccinationInformation.stAvRab
+
 
     End Sub
 
