@@ -13,6 +13,7 @@
     End Sub
     'The code below loads the splash screen and starts the timer for the progress bar.
     Private Sub SplashScreen_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.CenterToScreen()
         tmrProgTimer.Start()
     End Sub
 

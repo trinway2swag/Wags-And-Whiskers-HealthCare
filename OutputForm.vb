@@ -1,15 +1,20 @@
 ﻿Public Class Outputform
 
     Private Sub OutputForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim stAllPrevVacc As String
-        Dim stAllPurVacc As String
-        Dim dbTotalCost As Double
-        Dim test As String
+        Me.CenterToScreen()
+        Dim AvailableVacc As String
+        Dim PreviousVacc As String
+        Dim TotalCost As String
+        AvailableVacc = VaccinationInformation.stAvBor & " " & VaccinationInformation.stAvCanIn & " " & VaccinationInformation.stAvDeworm & " " & VaccinationInformation.stAvHeartWorm & " " & VaccinationInformation.stAvLep & " " & VaccinationInformation.stAvParIn & " " & VaccinationInformation.stAvRab
+        lblPurchasedVacc.Text = AvailableVacc
 
-        test = VaccinationInformation.stAvBor & " " & VaccinationInformation.stAvCanIn & " " & VaccinationInformation.stAvDeworm & " " & VaccinationInformation.stAvHeartWorm & " " & VaccinationInformation.stAvLep & " " & VaccinationInformation.stAvParIn & " " & VaccinationInformation.stAvRab
-        lblPurchasedVacc.Text = test
+        PreviousVacc = VaccinationInformation.stPreBor & " " & VaccinationInformation.stPreCanIn & " " & VaccinationInformation.stPreLep & " " & VaccinationInformation.stPreParIn & " " & VaccinationInformation.stPreRab
+        lblPrevVaccines.Text = PreviousVacc
+
+        TotalCost = VaccinationInformation.dbBor + VaccinationInformation.dbCanIn + VaccinationInformation.dbDeworm + VaccinationInformation.dbHeartworm + VaccinationInformation.dbLep + VaccinationInformation.dbParIn + VaccinationInformation.dbRab
+        outputinfocostlbl.Text = "$" & TotalCost
+
         lblDogName.Text = GeneralInformationForm.stDogName
-
         breedoutputlbl.Text = GeneralInformationForm.stDogBreed
         weightoutputlbl.Text = GeneralInformationForm.dbWeight
         coloroutputlbl.Text = GeneralInformationForm.stDogColor
@@ -25,11 +30,15 @@
 
         vetnameoutputlbl.Text = GeneralInformationForm.stVetName
         vetnumberoutputlbl.Text = GeneralInformationForm.dbVetNumber
-
-
+        outputinfodatelbl.Text = VaccinationInformation.stDate
+        Me.CenterToScreen()
     End Sub
 
     Private Sub btbExitOutput_Click(sender As Object, e As EventArgs) Handles btbExitOutput.Click
         Application.Exit()
+    End Sub
+
+    Private Sub btnPrint_Click(sender As Object, e As EventArgs) Handles btnPrint.Click
+
     End Sub
 End Class

@@ -48,10 +48,16 @@ Partial Class VaccinationInformation
         Me.Vaccineinfodatelbl = New System.Windows.Forms.Label()
         Me.gbPrevVacc = New System.Windows.Forms.GroupBox()
         Me.gbAvailableVacc = New System.Windows.Forms.GroupBox()
-        Me.mcDate = New System.Windows.Forms.MonthCalendar()
+        Me.mtbTodayDate = New System.Windows.Forms.MaskedTextBox()
+        Me.pbAvVacc = New System.Windows.Forms.PictureBox()
+        Me.pbPrevVac = New System.Windows.Forms.PictureBox()
+        Me.pbDate = New System.Windows.Forms.PictureBox()
         Me.pbVaccInfoLogo = New System.Windows.Forms.PictureBox()
         Me.gbPrevVacc.SuspendLayout()
         Me.gbAvailableVacc.SuspendLayout()
+        CType(Me.pbAvVacc, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbPrevVac, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbDate, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbVaccInfoLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -132,10 +138,10 @@ Partial Class VaccinationInformation
         Me.cbAvCanInflu.AutoSize = True
         Me.cbAvCanInflu.Font = New System.Drawing.Font("MS Reference Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbAvCanInflu.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.cbAvCanInflu.Location = New System.Drawing.Point(6, 111)
+        Me.cbAvCanInflu.Location = New System.Drawing.Point(6, 28)
         Me.cbAvCanInflu.Name = "cbAvCanInflu"
         Me.cbAvCanInflu.Size = New System.Drawing.Size(144, 22)
-        Me.cbAvCanInflu.TabIndex = 10
+        Me.cbAvCanInflu.TabIndex = 7
         Me.cbAvCanInflu.Text = "Canine influenza"
         Me.cbAvCanInflu.UseVisualStyleBackColor = True
         '
@@ -144,10 +150,10 @@ Partial Class VaccinationInformation
         Me.cbAvLepto.AutoSize = True
         Me.cbAvLepto.Font = New System.Drawing.Font("MS Reference Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbAvLepto.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.cbAvLepto.Location = New System.Drawing.Point(6, 83)
+        Me.cbAvLepto.Location = New System.Drawing.Point(6, 56)
         Me.cbAvLepto.Name = "cbAvLepto"
         Me.cbAvLepto.Size = New System.Drawing.Size(124, 22)
-        Me.cbAvLepto.TabIndex = 9
+        Me.cbAvLepto.TabIndex = 8
         Me.cbAvLepto.Text = "Leptospirosis"
         Me.cbAvLepto.UseVisualStyleBackColor = True
         '
@@ -156,10 +162,10 @@ Partial Class VaccinationInformation
         Me.cbAvParInflu.AutoSize = True
         Me.cbAvParInflu.Font = New System.Drawing.Font("MS Reference Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbAvParInflu.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.cbAvParInflu.Location = New System.Drawing.Point(6, 55)
+        Me.cbAvParInflu.Location = New System.Drawing.Point(6, 109)
         Me.cbAvParInflu.Name = "cbAvParInflu"
         Me.cbAvParInflu.Size = New System.Drawing.Size(139, 22)
-        Me.cbAvParInflu.TabIndex = 8
+        Me.cbAvParInflu.TabIndex = 10
         Me.cbAvParInflu.Text = "Parain influenza"
         Me.cbAvParInflu.UseVisualStyleBackColor = True
         '
@@ -168,10 +174,10 @@ Partial Class VaccinationInformation
         Me.cbAvBordetellavacc.AutoSize = True
         Me.cbAvBordetellavacc.Font = New System.Drawing.Font("MS Reference Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbAvBordetellavacc.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.cbAvBordetellavacc.Location = New System.Drawing.Point(6, 27)
+        Me.cbAvBordetellavacc.Location = New System.Drawing.Point(6, 83)
         Me.cbAvBordetellavacc.Name = "cbAvBordetellavacc"
         Me.cbAvBordetellavacc.Size = New System.Drawing.Size(100, 22)
-        Me.cbAvBordetellavacc.TabIndex = 7
+        Me.cbAvBordetellavacc.TabIndex = 9
         Me.cbAvBordetellavacc.Text = "Bordetella"
         Me.cbAvBordetellavacc.UseVisualStyleBackColor = True
         '
@@ -203,7 +209,7 @@ Partial Class VaccinationInformation
         '
         Me.bordetellapricelbl.AutoSize = True
         Me.bordetellapricelbl.Font = New System.Drawing.Font("MS Reference Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.bordetellapricelbl.Location = New System.Drawing.Point(225, 28)
+        Me.bordetellapricelbl.Location = New System.Drawing.Point(225, 111)
         Me.bordetellapricelbl.Name = "bordetellapricelbl"
         Me.bordetellapricelbl.Size = New System.Drawing.Size(35, 18)
         Me.bordetellapricelbl.TabIndex = 18
@@ -213,7 +219,7 @@ Partial Class VaccinationInformation
         '
         Me.paraininfluenzapricelbl.AutoSize = True
         Me.paraininfluenzapricelbl.Font = New System.Drawing.Font("MS Reference Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.paraininfluenzapricelbl.Location = New System.Drawing.Point(225, 57)
+        Me.paraininfluenzapricelbl.Location = New System.Drawing.Point(225, 85)
         Me.paraininfluenzapricelbl.Name = "paraininfluenzapricelbl"
         Me.paraininfluenzapricelbl.Size = New System.Drawing.Size(35, 18)
         Me.paraininfluenzapricelbl.TabIndex = 19
@@ -223,7 +229,7 @@ Partial Class VaccinationInformation
         '
         Me.leptospirosispricelbl.AutoSize = True
         Me.leptospirosispricelbl.Font = New System.Drawing.Font("MS Reference Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.leptospirosispricelbl.Location = New System.Drawing.Point(225, 85)
+        Me.leptospirosispricelbl.Location = New System.Drawing.Point(225, 58)
         Me.leptospirosispricelbl.Name = "leptospirosispricelbl"
         Me.leptospirosispricelbl.Size = New System.Drawing.Size(35, 18)
         Me.leptospirosispricelbl.TabIndex = 20
@@ -233,7 +239,7 @@ Partial Class VaccinationInformation
         '
         Me.canineinfluenzapricelbl.AutoSize = True
         Me.canineinfluenzapricelbl.Font = New System.Drawing.Font("MS Reference Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.canineinfluenzapricelbl.Location = New System.Drawing.Point(225, 113)
+        Me.canineinfluenzapricelbl.Location = New System.Drawing.Point(225, 30)
         Me.canineinfluenzapricelbl.Name = "canineinfluenzapricelbl"
         Me.canineinfluenzapricelbl.Size = New System.Drawing.Size(35, 18)
         Me.canineinfluenzapricelbl.TabIndex = 21
@@ -272,28 +278,28 @@ Partial Class VaccinationInformation
         'vaccineinfoexitbt
         '
         Me.vaccineinfoexitbt.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.vaccineinfoexitbt.Location = New System.Drawing.Point(377, 515)
+        Me.vaccineinfoexitbt.Location = New System.Drawing.Point(386, 325)
         Me.vaccineinfoexitbt.Name = "vaccineinfoexitbt"
         Me.vaccineinfoexitbt.Size = New System.Drawing.Size(75, 23)
-        Me.vaccineinfoexitbt.TabIndex = 35
+        Me.vaccineinfoexitbt.TabIndex = 17
         Me.vaccineinfoexitbt.Text = "Exit"
         Me.vaccineinfoexitbt.UseVisualStyleBackColor = True
         '
         'vaccineinforesetbt
         '
-        Me.vaccineinforesetbt.Location = New System.Drawing.Point(647, 515)
+        Me.vaccineinforesetbt.Location = New System.Drawing.Point(653, 325)
         Me.vaccineinforesetbt.Name = "vaccineinforesetbt"
         Me.vaccineinforesetbt.Size = New System.Drawing.Size(75, 23)
-        Me.vaccineinforesetbt.TabIndex = 366
+        Me.vaccineinforesetbt.TabIndex = 16
         Me.vaccineinforesetbt.Text = "Reset"
         Me.vaccineinforesetbt.UseVisualStyleBackColor = True
         '
         'vaccineinfocontinuebt
         '
-        Me.vaccineinfocontinuebt.Location = New System.Drawing.Point(900, 515)
+        Me.vaccineinfocontinuebt.Location = New System.Drawing.Point(900, 325)
         Me.vaccineinfocontinuebt.Name = "vaccineinfocontinuebt"
         Me.vaccineinfocontinuebt.Size = New System.Drawing.Size(90, 23)
-        Me.vaccineinfocontinuebt.TabIndex = 37
+        Me.vaccineinfocontinuebt.TabIndex = 15
         Me.vaccineinfocontinuebt.Text = "Continue"
         Me.vaccineinfocontinuebt.UseVisualStyleBackColor = True
         '
@@ -302,7 +308,7 @@ Partial Class VaccinationInformation
         Me.Vaccineinfodatelbl.AutoSize = True
         Me.Vaccineinfodatelbl.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Vaccineinfodatelbl.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.Vaccineinfodatelbl.Location = New System.Drawing.Point(611, 273)
+        Me.Vaccineinfodatelbl.Location = New System.Drawing.Point(624, 262)
         Me.Vaccineinfodatelbl.Name = "Vaccineinfodatelbl"
         Me.Vaccineinfodatelbl.Size = New System.Drawing.Size(125, 19)
         Me.Vaccineinfodatelbl.TabIndex = 367
@@ -317,9 +323,9 @@ Partial Class VaccinationInformation
         Me.gbPrevVacc.Controls.Add(Me.prevrabiescb)
         Me.gbPrevVacc.Font = New System.Drawing.Font("MS Reference Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gbPrevVacc.ForeColor = System.Drawing.Color.DarkCyan
-        Me.gbPrevVacc.Location = New System.Drawing.Point(386, 12)
+        Me.gbPrevVacc.Location = New System.Drawing.Point(403, 12)
         Me.gbPrevVacc.Name = "gbPrevVacc"
-        Me.gbPrevVacc.Size = New System.Drawing.Size(266, 227)
+        Me.gbPrevVacc.Size = New System.Drawing.Size(266, 247)
         Me.gbPrevVacc.TabIndex = 0
         Me.gbPrevVacc.TabStop = False
         Me.gbPrevVacc.Text = "*Please enter any previous vaccinations recieved."
@@ -344,24 +350,59 @@ Partial Class VaccinationInformation
         Me.gbAvailableVacc.ForeColor = System.Drawing.Color.DarkCyan
         Me.gbAvailableVacc.Location = New System.Drawing.Point(708, 12)
         Me.gbAvailableVacc.Name = "gbAvailableVacc"
-        Me.gbAvailableVacc.Size = New System.Drawing.Size(266, 227)
+        Me.gbAvailableVacc.Size = New System.Drawing.Size(266, 247)
         Me.gbAvailableVacc.TabIndex = 6
         Me.gbAvailableVacc.TabStop = False
         Me.gbAvailableVacc.Text = "*Available Vaccinations"
         '
-        'mcDate
+        'mtbTodayDate
         '
-        Me.mcDate.Location = New System.Drawing.Point(552, 296)
-        Me.mcDate.Name = "mcDate"
-        Me.mcDate.TabIndex = 14
+        Me.mtbTodayDate.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.mtbTodayDate.Location = New System.Drawing.Point(618, 284)
+        Me.mtbTodayDate.Mask = "00/00/0000"
+        Me.mtbTodayDate.Name = "mtbTodayDate"
+        Me.mtbTodayDate.Size = New System.Drawing.Size(145, 26)
+        Me.mtbTodayDate.TabIndex = 14
+        Me.mtbTodayDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.mtbTodayDate.ValidatingType = GetType(Date)
+        '
+        'pbAvVacc
+        '
+        Me.pbAvVacc.BackgroundImage = Global.Wags_And_Whiskers_HealthCare.My.Resources.Resources.syringe
+        Me.pbAvVacc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.pbAvVacc.Location = New System.Drawing.Point(675, 12)
+        Me.pbAvVacc.Name = "pbAvVacc"
+        Me.pbAvVacc.Size = New System.Drawing.Size(33, 26)
+        Me.pbAvVacc.TabIndex = 371
+        Me.pbAvVacc.TabStop = False
+        '
+        'pbPrevVac
+        '
+        Me.pbPrevVac.BackgroundImage = Global.Wags_And_Whiskers_HealthCare.My.Resources.Resources.syringe
+        Me.pbPrevVac.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.pbPrevVac.Location = New System.Drawing.Point(373, 12)
+        Me.pbPrevVac.Name = "pbPrevVac"
+        Me.pbPrevVac.Size = New System.Drawing.Size(33, 26)
+        Me.pbPrevVac.TabIndex = 370
+        Me.pbPrevVac.TabStop = False
+        '
+        'pbDate
+        '
+        Me.pbDate.BackgroundImage = Global.Wags_And_Whiskers_HealthCare.My.Resources.Resources.calendar
+        Me.pbDate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.pbDate.Location = New System.Drawing.Point(585, 262)
+        Me.pbDate.Name = "pbDate"
+        Me.pbDate.Size = New System.Drawing.Size(33, 26)
+        Me.pbDate.TabIndex = 369
+        Me.pbDate.TabStop = False
         '
         'pbVaccInfoLogo
         '
         Me.pbVaccInfoLogo.Image = Global.Wags_And_Whiskers_HealthCare.My.Resources.Resources.vaccinfo
-        Me.pbVaccInfoLogo.Location = New System.Drawing.Point(-5, 1)
+        Me.pbVaccInfoLogo.Location = New System.Drawing.Point(-18, 1)
         Me.pbVaccInfoLogo.Name = "pbVaccInfoLogo"
-        Me.pbVaccInfoLogo.Size = New System.Drawing.Size(376, 546)
-        Me.pbVaccInfoLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.pbVaccInfoLogo.Size = New System.Drawing.Size(376, 364)
+        Me.pbVaccInfoLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pbVaccInfoLogo.TabIndex = 368
         Me.pbVaccInfoLogo.TabStop = False
         '
@@ -372,8 +413,11 @@ Partial Class VaccinationInformation
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.CancelButton = Me.vaccineinfoexitbt
-        Me.ClientSize = New System.Drawing.Size(1002, 544)
-        Me.Controls.Add(Me.mcDate)
+        Me.ClientSize = New System.Drawing.Size(1002, 360)
+        Me.Controls.Add(Me.pbAvVacc)
+        Me.Controls.Add(Me.pbPrevVac)
+        Me.Controls.Add(Me.pbDate)
+        Me.Controls.Add(Me.mtbTodayDate)
         Me.Controls.Add(Me.Vaccineinfodatelbl)
         Me.Controls.Add(Me.gbAvailableVacc)
         Me.Controls.Add(Me.gbPrevVacc)
@@ -389,6 +433,9 @@ Partial Class VaccinationInformation
         Me.gbPrevVacc.PerformLayout()
         Me.gbAvailableVacc.ResumeLayout(False)
         Me.gbAvailableVacc.PerformLayout()
+        CType(Me.pbAvVacc, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbPrevVac, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbDate, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbVaccInfoLogo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -420,5 +467,8 @@ Partial Class VaccinationInformation
     Friend WithEvents pbVaccInfoLogo As PictureBox
     Friend WithEvents gbPrevVacc As GroupBox
     Friend WithEvents gbAvailableVacc As GroupBox
-    Friend WithEvents mcDate As MonthCalendar
+    Friend WithEvents mtbTodayDate As MaskedTextBox
+    Friend WithEvents pbDate As PictureBox
+    Friend WithEvents pbPrevVac As PictureBox
+    Friend WithEvents pbAvVacc As PictureBox
 End Class

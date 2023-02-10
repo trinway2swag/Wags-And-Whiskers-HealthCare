@@ -19,6 +19,7 @@
     Public dbRab As Double
     Public dbDeworm As Double
     Public dbHeartworm As Double
+    Public stDate As String
 
 
 
@@ -43,12 +44,13 @@
                 avvacccheckbx.Checked = False
             End If
         Next
+        mtbTodayDate.Clear()
     End Sub
     'code for the check boxes in the previous vaccination groupbox
     'code for the continue button
     Private Sub btnContinue_Click(sender As Object, e As EventArgs) Handles vaccineinfocontinuebt.Click
-        Outputform.Show()
-        Me.Hide()
+        mtbTodayDate.Text = stDate
+
 
         If prevbordetellacb.Checked Then
             stPreBor = "Bordetella"
@@ -77,7 +79,7 @@
         Else
             stPreRab = ""
         End If
-
+        'code for assigning whichever checkbox is chosen to a variable
         If cbAvBordetellavacc.Checked Then
             stAvBor = "Boretella"
             dbBor = 20
@@ -133,9 +135,11 @@
             dbRab = 0
         End If
 
+        Outputform.Show()
+        Me.Hide()
     End Sub
 
-    Private Sub mcDate_DateChanged(sender As Object, e As DateRangeEventArgs) Handles mcDate.DateChanged
-
+    Private Sub VaccinationInformation_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.CenterToScreen()
     End Sub
 End Class

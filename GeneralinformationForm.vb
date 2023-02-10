@@ -126,8 +126,8 @@
             stSpayedNeutered = "No"
         End If
 
-        dbAge = nudWeight.Value
-        dbWeight = cbAge.SelectedItem
+        dbWeight = nudWeight.Value
+        dbAge = cbAge.SelectedItem
 
         'Code for owner information.
         stOwnerName = ownernametxb.Text
@@ -144,6 +144,6 @@
     End Sub
 
     Private Sub GeneralInformationForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        Me.CenterToScreen()
     End Sub
 End Class
