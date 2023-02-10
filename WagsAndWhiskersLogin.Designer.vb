@@ -32,7 +32,6 @@ Partial Class WagsAndWhiskersLogin
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(WagsAndWhiskersLogin))
-        Me.LogoPictureBox = New System.Windows.Forms.PictureBox()
         Me.UsernameLabel = New System.Windows.Forms.Label()
         Me.PasswordLabel = New System.Windows.Forms.Label()
         Me.usernametb = New System.Windows.Forms.TextBox()
@@ -40,25 +39,16 @@ Partial Class WagsAndWhiskersLogin
         Me.OK = New System.Windows.Forms.Button()
         Me.Cancel = New System.Windows.Forms.Button()
         Me.Usernameerrorprovider = New System.Windows.Forms.ErrorProvider(Me.components)
-        CType(Me.LogoPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.LogoPictureBox = New System.Windows.Forms.PictureBox()
         CType(Me.Usernameerrorprovider, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LogoPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'LogoPictureBox
-        '
-        Me.LogoPictureBox.Image = CType(resources.GetObject("LogoPictureBox.Image"), System.Drawing.Image)
-        Me.LogoPictureBox.Location = New System.Drawing.Point(-1, 0)
-        Me.LogoPictureBox.Name = "LogoPictureBox"
-        Me.LogoPictureBox.Size = New System.Drawing.Size(178, 256)
-        Me.LogoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.LogoPictureBox.TabIndex = 0
-        Me.LogoPictureBox.TabStop = False
         '
         'UsernameLabel
         '
-        Me.UsernameLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.UsernameLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.UsernameLabel.ForeColor = System.Drawing.Color.Teal
-        Me.UsernameLabel.Location = New System.Drawing.Point(183, 54)
+        Me.UsernameLabel.Location = New System.Drawing.Point(180, 51)
         Me.UsernameLabel.Name = "UsernameLabel"
         Me.UsernameLabel.Size = New System.Drawing.Size(220, 23)
         Me.UsernameLabel.TabIndex = 0
@@ -67,9 +57,9 @@ Partial Class WagsAndWhiskersLogin
         '
         'PasswordLabel
         '
-        Me.PasswordLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PasswordLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PasswordLabel.ForeColor = System.Drawing.Color.Teal
-        Me.PasswordLabel.Location = New System.Drawing.Point(183, 117)
+        Me.PasswordLabel.Location = New System.Drawing.Point(180, 140)
         Me.PasswordLabel.Name = "PasswordLabel"
         Me.PasswordLabel.Size = New System.Drawing.Size(220, 23)
         Me.PasswordLabel.TabIndex = 2
@@ -78,22 +68,24 @@ Partial Class WagsAndWhiskersLogin
         '
         'usernametb
         '
-        Me.usernametb.Location = New System.Drawing.Point(183, 80)
+        Me.usernametb.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.usernametb.Location = New System.Drawing.Point(184, 77)
         Me.usernametb.Name = "usernametb"
-        Me.usernametb.Size = New System.Drawing.Size(220, 22)
+        Me.usernametb.Size = New System.Drawing.Size(236, 27)
         Me.usernametb.TabIndex = 1
         '
         'passwordtb
         '
-        Me.passwordtb.Location = New System.Drawing.Point(183, 143)
+        Me.passwordtb.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.passwordtb.Location = New System.Drawing.Point(184, 166)
         Me.passwordtb.Name = "passwordtb"
         Me.passwordtb.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.passwordtb.Size = New System.Drawing.Size(220, 22)
+        Me.passwordtb.Size = New System.Drawing.Size(236, 27)
         Me.passwordtb.TabIndex = 3
         '
         'OK
         '
-        Me.OK.Location = New System.Drawing.Point(183, 220)
+        Me.OK.Location = New System.Drawing.Point(443, 269)
         Me.OK.Name = "OK"
         Me.OK.Size = New System.Drawing.Size(94, 23)
         Me.OK.TabIndex = 4
@@ -102,7 +94,7 @@ Partial Class WagsAndWhiskersLogin
         'Cancel
         '
         Me.Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.Cancel.Location = New System.Drawing.Point(335, 220)
+        Me.Cancel.Location = New System.Drawing.Point(184, 269)
         Me.Cancel.Name = "Cancel"
         Me.Cancel.Size = New System.Drawing.Size(94, 23)
         Me.Cancel.TabIndex = 5
@@ -112,14 +104,24 @@ Partial Class WagsAndWhiskersLogin
         '
         Me.Usernameerrorprovider.ContainerControl = Me
         '
+        'LogoPictureBox
+        '
+        Me.LogoPictureBox.Image = CType(resources.GetObject("LogoPictureBox.Image"), System.Drawing.Image)
+        Me.LogoPictureBox.Location = New System.Drawing.Point(-1, 0)
+        Me.LogoPictureBox.Name = "LogoPictureBox"
+        Me.LogoPictureBox.Size = New System.Drawing.Size(178, 307)
+        Me.LogoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.LogoPictureBox.TabIndex = 0
+        Me.LogoPictureBox.TabStop = False
+        '
         'WagsAndWhiskersLogin
         '
         Me.AcceptButton = Me.OK
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BackColor = System.Drawing.Color.White
         Me.CancelButton = Me.Cancel
-        Me.ClientSize = New System.Drawing.Size(441, 255)
+        Me.ClientSize = New System.Drawing.Size(549, 304)
         Me.Controls.Add(Me.Cancel)
         Me.Controls.Add(Me.OK)
         Me.Controls.Add(Me.passwordtb)
@@ -135,8 +137,8 @@ Partial Class WagsAndWhiskersLogin
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "WagsAndWhiskersLogin"
-        CType(Me.LogoPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Usernameerrorprovider, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LogoPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

@@ -10,16 +10,12 @@
     Public stSpayedNeutered As String
     'Variables for the owner portion of the form.
     Public stOwnerName As String
-    Public dbOwnerNumber As String 'idk ab this
+    Public dbOwnerNumber As String
     Public stAddress As String
     Public stEmail As String
     'Variables for the vereranarian portion of the form.
     Public stVetName As String
-    Public dbVetNumber As String 'or this
-
-    Private Sub GeneralInformationForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
+    Public dbVetNumber As String
 
     'code for the exit button
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
@@ -36,58 +32,65 @@
         malerb.Checked = False
         rbYes.Checked = False
         rbNo.Checked = False
-        cbDogAge.ResetText()
         nudWeight.ResetText()
+        cbAge.ResetText()
         ownernametxb.Clear()
         mtbOwnerNum.Clear()
         owneraddresstxb.Clear()
         owneremailtxb.Clear()
-        vetnamtxb.Clear()
+        vetnametxb.Clear()
         mtbVetNum.Clear()
 
     End Sub
 
-    'Code for the continue button
+
     Private Sub btnContinue_Click(sender As Object, e As EventArgs) Handles btnContinue.Click
         'error messages for General Information Form
         If dognametxb.Text = "" Then
-            MessageBox.Show("Please Enter Your Dogs name")
+            MessageBox.Show("Please enter the dog's name.")
             dognametxb.Focus()
             Exit Sub
         End If
         If dogbreedtxb.Text = "" Then
-            MessageBox.Show("Please Enter Your Dogs Breed")
+            MessageBox.Show("Please enter the dog's breed.")
             dogbreedtxb.Focus()
             Exit Sub
         End If
         If colortxb.Text = "" Then
-            MessageBox.Show("Please Enter the Color of your Dog")
+            MessageBox.Show("Please enter the color of the dog.")
             colortxb.Focus()
             Exit Sub
         End If
-        If cbDogAge.Text = "" Then
-            MessageBox.Show("Please Enter Your Dogs Age")
-            cbDogAge.Focus()
+        If rtbSpecialMarkings.Text = "" Then
+            MessageBox.Show("Please describe the special markings on the dog.")
+            rtbSpecialMarkings.Focus()
+            Exit Sub
+        End If
+        If cbAge.Text = "" Then 'fix this
+            MessageBox.Show("Please select the dog's age.")
+            cbAge.Focus()
             Exit Sub
         End If
         If nudWeight.Text = "" Then
-            MessageBox.Show("Please Enter Your Dogs Weight")
+            MessageBox.Show("Please enter the dog's weight.")
             nudWeight.Focus()
             Exit Sub
         End If
+
+        If rbYes.Checked = False And rbNo.Checked = False Then
+            MessageBox.Show("Please state if the dog is spayed/neutered.")
+        End If
+        If Femalerb.Checked = False And malerb.Checked = False Then
+            MessageBox.Show("Please select the dog's sex.")
+        End If
         If ownernametxb.Text = "" Then
-            MessageBox.Show("Please Enter the Owners Name")
+            MessageBox.Show("Please enter the name of the owner.")
             ownernametxb.Focus()
             Exit Sub
         End If
         If mtbOwnerNum.Text = "" Then
-            MessageBox.Show("Please Enter the Owners Phone Number")
+            MessageBox.Show("Please enter the owner's phone number.")
             mtbOwnerNum.Focus()
-            Exit Sub
-        End If
-        If owneremailtxb.Text = "" Then
-            MessageBox.Show("Please Enter the Owners Email")
-            owneremailtxb.Focus()
             Exit Sub
         End If
         If owneraddresstxb.Text = "" Then
@@ -95,9 +98,9 @@
             owneraddresstxb.Focus()
             Exit Sub
         End If
-        If vetnamtxb.Text = "" Then
+        If vetnametxb.Text = "" Then
             MessageBox.Show("Please Enter the Veterinarian's Name")
-            vetnamtxb.Focus()
+            vetnametxb.Focus()
             Exit Sub
         End If
         If mtbVetNum.Text = "" Then
@@ -105,6 +108,7 @@
             mtbVetNum.Focus()
             Exit Sub
         End If
+        'code for global variables
         stDogName = dognametxb.Text
         stDogBreed = dogbreedtxb.Text
         stDogColor = colortxb.Text
@@ -122,8 +126,8 @@
             stSpayedNeutered = "No"
         End If
 
-        dbAge = cbDogAge.SelectedItem
-        dbWeight = nudWeight.Value
+        dbAge = nudWeight.Value
+        dbWeight = cbAge.SelectedItem
 
         'Code for owner information.
         stOwnerName = ownernametxb.Text
@@ -132,14 +136,12 @@
         stAddress = owneraddresstxb.Text
 
         'Code for veteranarian information.
-        stVetName = vetnamtxb.Text
+        stVetName = vetnametxb.Text
         dbVetNumber = mtbVetNum.Text
 
         VaccinationInformation.Show()
         Me.Hide()
     End Sub
 
-    Private Sub nudWeight_ValueChanged(sender As Object, e As EventArgs) Handles nudWeight.ValueChanged
 
-    End Sub
 End Class
