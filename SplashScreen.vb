@@ -1,4 +1,5 @@
-﻿Public Class SplashScreen
+﻿'Trinity Noble and Rigoberto Vellos, CS205A, Corozal Junior College, 10.02.2023
+Public Class SplashScreen
     'This is the code which will control the progress bar in the splash screen.
     Private Sub tmrProgTimer_Tick(sender As Object, e As EventArgs) Handles tmrProgTimer.Tick
         If (pbProgBar.Value = pbProgBar.Maximum - 1) Then

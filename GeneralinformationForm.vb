@@ -1,4 +1,5 @@
-﻿Public Class GeneralInformationForm
+﻿'Trinity Noble and Rigoberto Vellos, CS205A, Corozal Junior College, 10.02.2023
+Public Class GeneralInformationForm
     'Variables for the dog portion of the form.
     Public stDogName As String
     Public stDogBreed As String
@@ -40,72 +41,87 @@
         owneremailtxb.Clear()
         vetnametxb.Clear()
         mtbVetNum.Clear()
-
     End Sub
 
-
+    'error messages for General Information Form
     Private Sub btnContinue_Click(sender As Object, e As EventArgs) Handles btnContinue.Click
-        'error messages for General Information Form
         If dognametxb.Text = "" Then
-            MessageBox.Show("Please enter the dog's name.")
+            MessageBox.Show("Please enter the dog's name.", "Error",
+            MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
             dognametxb.Focus()
             Exit Sub
         End If
+
         If dogbreedtxb.Text = "" Then
-            MessageBox.Show("Please enter the dog's breed.")
+            MessageBox.Show("Please enter the dog's breed.", "Error",
+            MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
             dogbreedtxb.Focus()
             Exit Sub
         End If
+
         If colortxb.Text = "" Then
-            MessageBox.Show("Please enter the color of the dog.")
+            MessageBox.Show("Please enter the color of the dog.", "Error",
+            MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
             colortxb.Focus()
             Exit Sub
         End If
+
         If rtbSpecialMarkings.Text = "" Then
-            MessageBox.Show("Please describe the special markings on the dog.")
+            MessageBox.Show("Please describe the markings found on the dog.", "Error",
+            MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
             rtbSpecialMarkings.Focus()
             Exit Sub
         End If
-        If cbAge.Text = "" Then 'fix this
-            MessageBox.Show("Please select the dog's age.")
+
+        If cbAge.Text = "" Then
+            MessageBox.Show("Please enter the dog's age.", "Error",
+            MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
             cbAge.Focus()
             Exit Sub
         End If
-        If nudWeight.Text = "" Then
-            MessageBox.Show("Please enter the dog's weight.")
+
+        If nudWeight.Text = 0 Then
+            MessageBox.Show("Please enter the dog's weight.", "Error",
+            MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
             nudWeight.Focus()
             Exit Sub
         End If
 
         If rbYes.Checked = False And rbNo.Checked = False Then
-            MessageBox.Show("Please state if the dog is spayed/neutered.")
+            MessageBox.Show("Please state if the dog is spayed/neutered.", "Error",
+            MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
         End If
+
         If Femalerb.Checked = False And malerb.Checked = False Then
-            MessageBox.Show("Please select the dog's sex.")
+            MessageBox.Show("Please select the dog's sex.", "Error",
+            MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
         End If
+
         If ownernametxb.Text = "" Then
-            MessageBox.Show("Please enter the name of the owner.")
+            MessageBox.Show("Please enter the name of the owner.", "Error",
+            MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
             ownernametxb.Focus()
             Exit Sub
         End If
+
         If mtbOwnerNum.Text = "" Then
-            MessageBox.Show("Please enter the owner's phone number.")
+            MessageBox.Show("Please enter the owner's phone number.", "Error",
+            MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
             mtbOwnerNum.Focus()
             Exit Sub
         End If
+
         If owneraddresstxb.Text = "" Then
-            MessageBox.Show("Please Enter the Address")
+            MessageBox.Show("Please enter the address of the owner.", "Error",
+            MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
             owneraddresstxb.Focus()
             Exit Sub
         End If
+
         If vetnametxb.Text = "" Then
-            MessageBox.Show("Please Enter the Veterinarian's Name")
+            MessageBox.Show("Please enter the name of the veteranarian.", "Error",
+            MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
             vetnametxb.Focus()
-            Exit Sub
-        End If
-        If mtbVetNum.Text = "" Then
-            MessageBox.Show("Please Enter the Veterinarian's Number")
-            mtbVetNum.Focus()
             Exit Sub
         End If
         'code for global variables
@@ -143,6 +159,7 @@
         Me.Hide()
     End Sub
 
+    'centering the form to the user's screen
     Private Sub GeneralInformationForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.CenterToScreen()
     End Sub

@@ -43,8 +43,8 @@ Partial Class Outputform
         Me.addressoutputlbl = New System.Windows.Forms.Label()
         Me.emailoutputbl = New System.Windows.Forms.Label()
         Me.phonenumberoutputlbl = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblOutputAddress = New System.Windows.Forms.Label()
+        Me.lblOutputEmail = New System.Windows.Forms.Label()
         Me.ownernamelb = New System.Windows.Forms.Label()
         Me.ownerphonelb = New System.Windows.Forms.Label()
         Me.vetnumberoutputlbl = New System.Windows.Forms.Label()
@@ -62,6 +62,8 @@ Partial Class Outputform
         Me.btbExitOutput = New System.Windows.Forms.Button()
         Me.pbOutputHeader = New System.Windows.Forms.PictureBox()
         Me.btnPrint = New System.Windows.Forms.Button()
+        Me.PrintPreviewDialog = New System.Windows.Forms.PrintPreviewDialog()
+        Me.PrintDocument = New System.Drawing.Printing.PrintDocument()
         CType(Me.pbOutputHeader, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -297,27 +299,27 @@ Partial Class Outputform
         Me.phonenumberoutputlbl.Text = "--"
         Me.phonenumberoutputlbl.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'Label2
+        'lblOutputAddress
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("MS Reference Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label2.Location = New System.Drawing.Point(348, 415)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(95, 22)
-        Me.Label2.TabIndex = 16
-        Me.Label2.Text = "Address:"
+        Me.lblOutputAddress.AutoSize = True
+        Me.lblOutputAddress.Font = New System.Drawing.Font("MS Reference Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblOutputAddress.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.lblOutputAddress.Location = New System.Drawing.Point(348, 415)
+        Me.lblOutputAddress.Name = "lblOutputAddress"
+        Me.lblOutputAddress.Size = New System.Drawing.Size(95, 22)
+        Me.lblOutputAddress.TabIndex = 16
+        Me.lblOutputAddress.Text = "Address:"
         '
-        'Label1
+        'lblOutputEmail
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("MS Reference Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label1.Location = New System.Drawing.Point(348, 366)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(72, 22)
-        Me.Label1.TabIndex = 15
-        Me.Label1.Text = "Email:"
+        Me.lblOutputEmail.AutoSize = True
+        Me.lblOutputEmail.Font = New System.Drawing.Font("MS Reference Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblOutputEmail.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.lblOutputEmail.Location = New System.Drawing.Point(348, 366)
+        Me.lblOutputEmail.Name = "lblOutputEmail"
+        Me.lblOutputEmail.Size = New System.Drawing.Size(72, 22)
+        Me.lblOutputEmail.TabIndex = 15
+        Me.lblOutputEmail.Text = "Email:"
         '
         'ownernamelb
         '
@@ -507,6 +509,20 @@ Partial Class Outputform
         Me.btnPrint.Text = "Print"
         Me.btnPrint.UseVisualStyleBackColor = False
         '
+        'PrintPreviewDialog
+        '
+        Me.PrintPreviewDialog.AutoScrollMargin = New System.Drawing.Size(0, 0)
+        Me.PrintPreviewDialog.AutoScrollMinSize = New System.Drawing.Size(0, 0)
+        Me.PrintPreviewDialog.ClientSize = New System.Drawing.Size(400, 300)
+        Me.PrintPreviewDialog.Enabled = True
+        Me.PrintPreviewDialog.Icon = CType(resources.GetObject("PrintPreviewDialog.Icon"), System.Drawing.Icon)
+        Me.PrintPreviewDialog.Name = "PrintPreviewDialog"
+        Me.PrintPreviewDialog.ShowIcon = False
+        Me.PrintPreviewDialog.Visible = False
+        '
+        'PrintDocument
+        '
+        '
         'Outputform
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -516,14 +532,14 @@ Partial Class Outputform
         Me.Controls.Add(Me.lblSpayedNeutered)
         Me.Controls.Add(Me.genderlb)
         Me.Controls.Add(Me.lblWeight)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.lblOutputAddress)
         Me.Controls.Add(Me.dognamelbl)
         Me.Controls.Add(Me.vetnamelb)
         Me.Controls.Add(Me.lblDogAge)
         Me.Controls.Add(Me.specialmarklbl)
         Me.Controls.Add(Me.colorlb)
         Me.Controls.Add(Me.breedlb)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.lblOutputEmail)
         Me.Controls.Add(Me.vetnumberoutputlbl)
         Me.Controls.Add(Me.ownerphonelb)
         Me.Controls.Add(Me.ownernamelb)
@@ -578,12 +594,12 @@ Partial Class Outputform
     Friend WithEvents lblDogAge As Label
     Friend WithEvents ownernamelb As Label
     Friend WithEvents ownerphonelb As Label
-    Friend WithEvents Label1 As Label
+    Friend WithEvents lblOutputEmail As Label
     Friend WithEvents addressoutputlbl As Label
     Friend WithEvents emailoutputbl As Label
     Friend WithEvents phonenumberoutputlbl As Label
     Friend WithEvents ownernameoutputlbl As Label
-    Friend WithEvents Label2 As Label
+    Friend WithEvents lblOutputAddress As Label
     Friend WithEvents vetnumberoutputlbl As Label
     Friend WithEvents vetnameoutputlbl As Label
     Friend WithEvents vetnamelb As Label
@@ -599,4 +615,6 @@ Partial Class Outputform
     Friend WithEvents btnPrint As Button
     Friend WithEvents lblPurchasedVacc As Label
     Friend WithEvents lblPrevVaccines As Label
+    Friend WithEvents PrintPreviewDialog As PrintPreviewDialog
+    Friend WithEvents PrintDocument As Printing.PrintDocument
 End Class

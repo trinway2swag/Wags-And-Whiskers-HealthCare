@@ -1,5 +1,6 @@
-﻿Public Class VaccinationInformation
-
+﻿'Trinity Noble and Rigoberto Vellos, CS205A, Corozal Junior College, 10.02.2023
+Public Class VaccinationInformation
+    'declaration of global variables
     Public stPreBor As String
     Public stPreCanIn As String
     Public stPreLep As String
@@ -49,8 +50,7 @@
     'code for the check boxes in the previous vaccination groupbox
     'code for the continue button
     Private Sub btnContinue_Click(sender As Object, e As EventArgs) Handles vaccineinfocontinuebt.Click
-        mtbTodayDate.Text = stDate
-
+        stDate = mtbTodayDate.Text
 
         If prevbordetellacb.Checked Then
             stPreBor = "Bordetella"
@@ -79,7 +79,7 @@
         Else
             stPreRab = ""
         End If
-        'code for assigning whichever checkbox is chosen to a variable
+        'The code for the groupbox Available Vaccines. In addition, it also assigns a value to the variables which are used to calculate the total cost.
         If cbAvBordetellavacc.Checked Then
             stAvBor = "Boretella"
             dbBor = 20
@@ -139,6 +139,7 @@
         Me.Hide()
     End Sub
 
+    'centering the form to the user's screen.
     Private Sub VaccinationInformation_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.CenterToScreen()
     End Sub
