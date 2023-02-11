@@ -143,4 +143,9 @@ Public Class VaccinationInformation
     Private Sub VaccinationInformation_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.CenterToScreen()
     End Sub
+
+    Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
+        GeneralInformationForm.Show()
+        Me.Hide()
+    End Sub
 End Class

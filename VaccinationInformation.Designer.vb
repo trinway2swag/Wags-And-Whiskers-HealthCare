@@ -53,6 +53,7 @@ Partial Class VaccinationInformation
         Me.pbPrevVac = New System.Windows.Forms.PictureBox()
         Me.pbDate = New System.Windows.Forms.PictureBox()
         Me.pbVaccInfoLogo = New System.Windows.Forms.PictureBox()
+        Me.btnBack = New System.Windows.Forms.Button()
         Me.gbPrevVacc.SuspendLayout()
         Me.gbAvailableVacc.SuspendLayout()
         CType(Me.pbAvVacc, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -281,13 +282,13 @@ Partial Class VaccinationInformation
         Me.vaccineinfoexitbt.Location = New System.Drawing.Point(386, 325)
         Me.vaccineinfoexitbt.Name = "vaccineinfoexitbt"
         Me.vaccineinfoexitbt.Size = New System.Drawing.Size(75, 23)
-        Me.vaccineinfoexitbt.TabIndex = 17
+        Me.vaccineinfoexitbt.TabIndex = 18
         Me.vaccineinfoexitbt.Text = "Exit"
         Me.vaccineinfoexitbt.UseVisualStyleBackColor = True
         '
         'vaccineinforesetbt
         '
-        Me.vaccineinforesetbt.Location = New System.Drawing.Point(653, 325)
+        Me.vaccineinforesetbt.Location = New System.Drawing.Point(763, 325)
         Me.vaccineinforesetbt.Name = "vaccineinforesetbt"
         Me.vaccineinforesetbt.Size = New System.Drawing.Size(75, 23)
         Me.vaccineinforesetbt.TabIndex = 16
@@ -406,6 +407,15 @@ Partial Class VaccinationInformation
         Me.pbVaccInfoLogo.TabIndex = 368
         Me.pbVaccInfoLogo.TabStop = False
         '
+        'btnBack
+        '
+        Me.btnBack.Location = New System.Drawing.Point(543, 325)
+        Me.btnBack.Name = "btnBack"
+        Me.btnBack.Size = New System.Drawing.Size(75, 23)
+        Me.btnBack.TabIndex = 17
+        Me.btnBack.Text = "Back"
+        Me.btnBack.UseVisualStyleBackColor = True
+        '
         'VaccinationInformation
         '
         Me.AcceptButton = Me.vaccineinfocontinuebt
@@ -414,6 +424,7 @@ Partial Class VaccinationInformation
         Me.BackColor = System.Drawing.Color.White
         Me.CancelButton = Me.vaccineinfoexitbt
         Me.ClientSize = New System.Drawing.Size(1002, 360)
+        Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.pbAvVacc)
         Me.Controls.Add(Me.pbPrevVac)
         Me.Controls.Add(Me.pbDate)
@@ -471,4 +482,5 @@ Partial Class VaccinationInformation
     Friend WithEvents pbDate As PictureBox
     Friend WithEvents pbPrevVac As PictureBox
     Friend WithEvents pbAvVacc As PictureBox
+    Friend WithEvents btnBack As Button
 End Class
